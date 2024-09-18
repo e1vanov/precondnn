@@ -1,0 +1,61 @@
+% === ENCODINGS === 
+
+\usepackage[english, russian]{babel}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% === MATH === 
+
+% Some math fonts
+\usepackage{amsfonts}
+
+% Some math symbols
+\usepackage{amssymb}
+
+% Some math "making beautiful" stuff
+\usepackage{mathtools}
+
+% Some math fonts
+\usepackage{mathrsfs}  
+
+\numberwithin{equation}{section}
+
+% === REFERENCES ===
+
+\usepackage[sorting=none]{biblatex}
+\addbibresource{sources.bib}
+
+
+% === MY COMMANDS ===
+
+\newcommand{\deriv}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\R}{\mathbb R}
+\newcommand{\Row}{\sum\limits_{n=1}^\infty}
+\newcommand{\Rowk}{\sum\limits_{k=1}^\infty}
+\newcommand{\Prod}{\prod\limits_{n=1}^\infty}
+\newcommand{\Prodk}{\prod\limits_{k=1}^\infty}
+\newcommand{\eps}{\varepsilon}
+\renewcommand{\phi}{\varphi}
+\newcommand{\fall}{\:\forall\:}
+\newcommand{\ex}{\:\exists\:}
+
+% === MATH OPERATORS ===
+
+\DeclareMathOperator{\const}{const}
+\DeclareMathOperator{\Ker}{ker}
+\DeclareMathOperator{\Image}{im}
+\DeclareMathOperator{\Def}{def}
+\DeclareMathOperator{\Rank}{rank}
+\DeclareMathOperator{\Dim}{dim}
+\DeclareMathOperator{\Argmin}{Argmin}
+\DeclareMathOperator{\Tr}{tr}
+\DeclareMathOperator{\Interior}{int}
+\DeclareMathOperator{\Dom}{dom}
+\DeclareMathOperator{\Aff}{aff}
+\DeclareMathOperator{\Relint}{relint}
+
+% === OTHER ===
+
+% Indent in the begging of first par
+\usepackage{indentfirst}
+
