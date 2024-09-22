@@ -1,12 +1,13 @@
 import torch
 import torch.nn as nn
 
-from make_circulant import make_circulant
-from make_toeplitz import make_toeplitz
+from matrix_builder import (make_circulant,
+                            make_symm_toeplitz,
+                            make_eye_sub_tc_inv)
+
+from fast_circ_ops import fast_circ_matvec
 
 class SpecRadLoss(nn.Module):
-
-    # TO DO: implement using torch.fft
 
     # using rho(A) = lim_n sup \|x\| = 1 \| A^n x \|^1/n
 
@@ -20,25 +21,24 @@ class SpecRadLoss(nn.Module):
         self.n_samples = n_samples
         self.alpha_reg = alpha_reg
 
-    def forward(self, x, circ):
+    def forward(self, t, c_inv):
 
-        # x shape: (N, L)
-        length = x.shape[1]
+        # x shape: (N, D)
+        length = t.shape[1]
 
         sphere_points = torch.randn((length, self.n_samples))
         sphere_points /= torch.norm(sphere_points, dim=0)
-        sphere_points = sphere_points.repeat(x.shape[0], 1, 1)
+        sphere_points = sphere_points.repeat(t.shape[0], 1, 1)
 
-        A = make_toeplitz(x, dim=1)
-        C = torch.permute(make_circulant(circ, dim=1), (0, 2, 1))
+        T = make_symm_toeplitz(t, dim=1)
 
-        # sphere_points shape: (L, n_samples)
+        # sphere_points shape: (N, D, n_samples)
 
         y = torch.zeros_like(sphere_points)
         y += sphere_points
 
         for i in range(self.n):
-            y = y - torch.matmul(C, torch.matmul(A, y))
+            y = y - torch.matmul(T, fast_circ_matvec(c_inv, y))
 
         y = y + self.alpha_reg * sphere_points
 
@@ -46,24 +46,13 @@ class SpecRadLoss(nn.Module):
         
         return torch.mean(vals)
 
-class NuclearNormLoss(nn.Module):
+class MatrixNormLoss(nn.Module):
 
-    # using rho(A) = lim_n sup \|x\| = 1 \| A^n x \|^1/n
-
-    def __init__(self):
+    def __init__(self, p):
 
         super().__init__()
+        self.p = p
 
-    def forward(self, x, circ):
+    def forward(self, t, c_inv):
 
-        # x shape: (N, L)
-        length = x.shape[1]
-
-        A = make_toeplitz(x, dim=1)
-        C = torch.permute(make_circulant(circ, dim=1), (0, 2, 1))
-
-        vals = torch.norm(torch.eye(length).repeat(x.shape[0], 1, 1) - torch.matmul(A, C),
-                          p='nuc',
-                          dim=(1,2))
-        
-        return torch.mean(vals)
+        return torch.mean(torch.linalg.matrix_norm(make_eye_sub_tc_inv(t, c_inv), ord=self.p))

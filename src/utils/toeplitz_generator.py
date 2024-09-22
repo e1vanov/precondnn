@@ -8,10 +8,10 @@ def normal_toeplitz_generator(stds, n_samples):
 
         yield np.random.normal(scale=stds)
 
-def generate_toeplitz_ul_dataset(stds=[1.], 
-                                 n_samples=10000, 
-                                 test_size=0.1,
-                                 path='./'):
+def generate_symm_toeplitz_ul_dataset(stds=[1.], 
+                                      n_samples=10000, 
+                                      test_size=0.1,
+                                      path='./'):
 
     X = np.vstack(list(normal_toeplitz_generator(stds, n_samples)))
 
