@@ -56,3 +56,24 @@ class MatrixNormLoss(nn.Module):
     def forward(self, t, c_inv):
 
         return torch.mean(torch.linalg.matrix_norm(make_eye_sub_tc_inv(t, c_inv), ord=self.p))
+
+class KCondNumberLoss(nn.Module):
+
+    def __init__(self):
+
+        super().__init__()
+
+    def forward(self, t, c_inv):
+
+        matrices = make_eye_sub_tc_inv(t, c_inv)
+        
+        d = matrices.shape[-1]
+
+        # https://discuss.pytorch.org/t/how-to-calculate-matrix-trace-in-3d-tensor/132435/2
+        traces = matrices.diagonal(offset=0, 
+                                   dim1=-2, 
+                                   dim2=-1).sum(dim=-1)
+
+        dets = torch.linalg.det(matrices)
+        
+        return torch.mean((traces / d) ** d / dets)
