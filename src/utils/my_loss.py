@@ -65,6 +65,8 @@ class KCondNumberLoss(nn.Module):
 
     def forward(self, t, c_inv):
 
+        # TO DO: change to log computations
+
         matrices = make_eye_sub_tc_inv(t, c_inv)
         
         d = matrices.shape[-1]

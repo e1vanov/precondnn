@@ -52,7 +52,7 @@ def gen_symm_band_toeplitz_ul_ds_normal(stds=[1.],
     padded_stds = np.zeros(d)
     padded_stds[:len(stds)] = np.array(stds)
 
-    X = np.vstack(list(normal_toeplitz_generator(stds, n_samples)))
+    X = np.vstack(list(normal_toeplitz_generator(padded_stds, n_samples)))
 
     X_train, X_test = train_test_split(X, test_size=test_size)
 
