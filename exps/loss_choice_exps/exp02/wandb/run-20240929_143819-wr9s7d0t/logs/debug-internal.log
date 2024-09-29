@@ -1,0 +1,1405 @@
+2024-09-29 14:38:19,179 INFO    StreamThr :20263 [internal.py:wandb_internal():85] W&B internal server running at pid: 20263, started at: 2024-09-29 14:38:19.178900
+2024-09-29 14:38:19,184 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status
+2024-09-29 14:38:19,195 INFO    WriterThread:20263 [datastore.py:open_for_write():87] open: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/run-wr9s7d0t.wandb
+2024-09-29 14:38:19,196 DEBUG   SenderThread:20263 [sender.py:send():391] send: header
+2024-09-29 14:38:19,239 DEBUG   SenderThread:20263 [sender.py:send():391] send: run
+2024-09-29 14:38:19,908 INFO    SenderThread:20263 [dir_watcher.py:__init__():211] watching files in: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files
+2024-09-29 14:38:19,908 INFO    SenderThread:20263 [sender.py:_start_run_threads():1200] run started: wr9s7d0t with start time 1727609899.17845
+2024-09-29 14:38:19,921 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: run_start
+2024-09-29 14:38:19,922 DEBUG   HandlerThread:20263 [system_info.py:__init__():26] System info init
+2024-09-29 14:38:19,922 DEBUG   HandlerThread:20263 [system_info.py:__init__():41] System info init done
+2024-09-29 14:38:19,922 INFO    HandlerThread:20263 [system_monitor.py:start():194] Starting system monitor
+2024-09-29 14:38:19,922 INFO    SystemMonitor:20263 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-09-29 14:38:19,922 INFO    HandlerThread:20263 [system_monitor.py:probe():214] Collecting system info
+2024-09-29 14:38:19,923 INFO    SystemMonitor:20263 [interfaces.py:start():188] Started cpu monitoring
+2024-09-29 14:38:19,923 INFO    SystemMonitor:20263 [interfaces.py:start():188] Started disk monitoring
+2024-09-29 14:38:19,924 INFO    SystemMonitor:20263 [interfaces.py:start():188] Started memory monitoring
+2024-09-29 14:38:19,925 INFO    SystemMonitor:20263 [interfaces.py:start():188] Started network monitoring
+2024-09-29 14:38:19,949 DEBUG   HandlerThread:20263 [system_info.py:probe():152] Probing system
+2024-09-29 14:38:19,951 DEBUG   HandlerThread:20263 [system_info.py:_probe_git():137] Probing git
+2024-09-29 14:38:19,957 DEBUG   HandlerThread:20263 [system_info.py:_probe_git():145] Probing git done
+2024-09-29 14:38:19,957 DEBUG   HandlerThread:20263 [system_info.py:probe():200] Probing system done
+2024-09-29 14:38:19,957 DEBUG   HandlerThread:20263 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-88-generic-x86_64-with-glibc2.35', 'python': '3.11.5', 'heartbeatAt': '2024-09-29T11:38:19.949658', 'startedAt': '2024-09-29T11:38:19.173340', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'main.ipynb', 'codePathLocal': 'main.ipynb', 'root': '/home/egor/desktop/tmp/precondnn', 'git': {'remote': 'git@github.com:e1vanov/precondnn.git', 'commit': 'b80f5b6636af1f2441be2fb5337e774b15d2a187'}, 'email': 's02210401@gse.cs.msu.ru', 'host': 'egor-MacBookAir', 'username': 'egor', 'executable': '/home/egor/miniconda3/bin/python', 'cpu_count': 2, 'cpu_count_logical': 4, 'cpu_freq': {'current': 2.60425, 'min': 500.0, 'max': 2900.0}, 'cpu_freq_per_core': [{'current': 2.9, 'min': 500.0, 'max': 2900.0}, {'current': 2.8, 'min': 500.0, 'max': 2900.0}, {'current': 2.9, 'min': 500.0, 'max': 2900.0}, {'current': 1.817, 'min': 500.0, 'max': 2900.0}], 'disk': {'/': {'total': 457.2810821533203, 'used': 57.58803939819336}}, 'memory': {'total': 7.656715393066406}}
+2024-09-29 14:38:19,957 INFO    HandlerThread:20263 [system_monitor.py:probe():224] Finished collecting system info
+2024-09-29 14:38:19,957 INFO    HandlerThread:20263 [system_monitor.py:probe():227] Publishing system info
+2024-09-29 14:38:19,957 DEBUG   HandlerThread:20263 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-09-29 14:38:20,910 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_created():271] file/dir created: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/conda-environment.yaml
+2024-09-29 14:38:23,880 DEBUG   HandlerThread:20263 [system_info.py:_save_conda():224] Saving conda packages done
+2024-09-29 14:38:23,880 INFO    HandlerThread:20263 [system_monitor.py:probe():229] Finished publishing system info
+2024-09-29 14:38:23,882 DEBUG   SenderThread:20263 [sender.py:send():391] send: files
+2024-09-29 14:38:23,883 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-metadata.json with policy now
+2024-09-29 14:38:23,910 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/conda-environment.yaml
+2024-09-29 14:38:23,910 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_created():271] file/dir created: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/wandb-metadata.json
+2024-09-29 14:38:24,041 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: python_packages
+2024-09-29 14:38:24,042 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: python_packages
+2024-09-29 14:38:24,042 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:38:24,043 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:38:24,044 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:38:24,371 DEBUG   SenderThread:20263 [sender.py:send():391] send: telemetry
+2024-09-29 14:38:24,371 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:38:24,795 INFO    wandb-upload_0:20263 [upload_job.py:push():130] Uploaded file /tmp/tmpiy6lwrqxwandb/nj7kcw6w-wandb-metadata.json
+2024-09-29 14:38:24,910 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_created():271] file/dir created: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:38:24,910 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_created():271] file/dir created: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/requirements.txt
+2024-09-29 14:38:26,755 DEBUG   SenderThread:20263 [sender.py:send():391] send: telemetry
+2024-09-29 14:38:26,755 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:26,911 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:38:26,954 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:26,955 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:26,955 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:26,956 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:27,145 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:27,145 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:27,146 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:27,146 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:27,349 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:27,350 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:27,350 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:27,350 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:27,568 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:27,568 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:27,569 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:27,569 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:27,758 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:27,759 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:27,759 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:27,759 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:27,911 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_created():271] file/dir created: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/wandb-summary.json
+2024-09-29 14:38:27,940 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:27,941 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:27,941 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:27,942 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:28,134 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:28,134 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:28,135 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:28,135 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:28,326 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:28,327 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:28,327 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:28,327 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:28,628 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:28,629 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:28,629 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:28,629 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:28,801 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:28,801 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:28,802 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:28,802 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:28,911 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/wandb-summary.json
+2024-09-29 14:38:28,988 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:28,989 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:28,989 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:28,990 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:29,189 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:29,190 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:29,190 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:29,190 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:29,381 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:29,382 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:29,382 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:29,383 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:29,383 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:38:29,569 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:29,570 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:29,570 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:29,571 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:29,754 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:29,754 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:29,755 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:29,755 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:29,912 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/wandb-summary.json
+2024-09-29 14:38:29,956 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:29,956 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:29,956 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:29,957 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:30,230 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:30,231 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:30,231 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:30,232 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:30,501 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:30,502 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:30,502 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:30,502 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:30,761 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:30,762 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:30,762 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:30,765 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:30,912 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/wandb-summary.json
+2024-09-29 14:38:31,004 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:31,004 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:31,004 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:31,005 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:31,410 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:31,411 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:31,411 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:31,412 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:31,815 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:31,816 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:31,817 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:31,817 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:31,913 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/wandb-summary.json
+2024-09-29 14:38:32,096 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:32,097 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:32,097 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:32,098 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:32,325 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:32,325 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:32,326 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:32,326 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:32,619 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:32,619 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:32,620 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:32,620 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:32,828 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:32,829 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:32,830 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:32,830 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:32,913 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/wandb-summary.json
+2024-09-29 14:38:33,184 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:33,185 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:33,185 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:33,185 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:33,410 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:33,411 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:33,411 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:33,412 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:33,787 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:33,788 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:33,788 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:33,788 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:33,916 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/wandb-summary.json
+2024-09-29 14:38:34,042 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:38:34,222 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:34,226 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:34,226 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:34,227 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:34,682 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:34,683 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:34,683 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:34,684 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:34,684 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:38:34,916 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/wandb-summary.json
+2024-09-29 14:38:35,217 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:35,218 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:35,218 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:35,218 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:35,840 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:35,841 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:35,841 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:35,841 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:35,916 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/wandb-summary.json
+2024-09-29 14:38:36,327 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:36,328 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:36,328 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:36,329 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:36,625 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:36,626 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:36,626 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:36,626 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:36,917 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/wandb-summary.json
+2024-09-29 14:38:37,011 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:37,012 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:37,013 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:37,013 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:37,411 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:37,413 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:37,413 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:37,414 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:37,798 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:37,799 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:37,799 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:37,799 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:37,917 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/wandb-summary.json
+2024-09-29 14:38:38,155 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:38,156 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:38,156 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:38,156 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:38,495 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:38,496 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:38,496 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:38,496 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:38,854 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:38,855 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:38,855 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:38,855 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:38,917 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/wandb-summary.json
+2024-09-29 14:38:39,043 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:38:39,048 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:38:39,233 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:39,286 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:39,286 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:39,286 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:39,666 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:39,667 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:39,667 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:39,668 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:39,918 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/wandb-summary.json
+2024-09-29 14:38:39,932 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:39,932 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:39,933 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:39,933 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:39,936 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:38:40,137 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:40,137 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:40,138 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:40,138 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:40,331 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:40,332 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:40,332 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:40,332 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:40,638 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:40,639 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:40,639 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:40,639 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:40,918 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/wandb-summary.json
+2024-09-29 14:38:40,958 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:40,959 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:40,959 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:40,960 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:41,322 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:41,323 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:41,323 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:41,323 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:41,636 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:41,638 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:41,638 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:41,658 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:41,874 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:41,875 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:41,876 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:41,876 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:41,921 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/wandb-summary.json
+2024-09-29 14:38:42,280 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:42,280 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:42,280 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:42,281 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:42,707 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:42,708 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:42,708 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:42,709 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:42,920 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/wandb-summary.json
+2024-09-29 14:38:43,077 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:43,078 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:43,078 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:43,360 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:43,586 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:43,761 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:43,761 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:43,762 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:43,762 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:43,762 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:43,762 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:43,884 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:43,890 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:43,891 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:43,892 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:43,920 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/wandb-summary.json
+2024-09-29 14:38:44,006 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:44,043 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:38:44,167 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:44,168 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:44,169 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:44,169 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:44,394 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:44,395 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:44,395 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:44,396 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:44,695 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:44,696 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:44,696 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:44,697 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:44,905 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:44,906 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:44,906 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:44,920 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/wandb-summary.json
+2024-09-29 14:38:44,948 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:44,948 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:38:45,112 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:45,112 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:45,112 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:45,113 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:45,373 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:45,374 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:45,374 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:45,374 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:45,640 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:45,642 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:45,643 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:45,643 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:45,894 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:45,895 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:45,895 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:45,896 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:45,921 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/wandb-summary.json
+2024-09-29 14:38:46,186 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:46,187 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:46,187 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:46,188 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:46,385 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:46,386 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:46,386 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:46,386 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:46,568 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:46,569 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:46,569 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:46,570 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:46,756 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:46,757 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:46,757 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:46,758 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:46,921 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/wandb-summary.json
+2024-09-29 14:38:46,944 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:46,944 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:46,944 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:46,945 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:47,142 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:47,143 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:47,143 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:47,143 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:47,359 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:47,360 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:47,360 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:47,360 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:47,549 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:47,550 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:47,550 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:47,551 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:47,738 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:47,739 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:47,740 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:47,740 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:47,921 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:47,922 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:47,922 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:47,922 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:47,925 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/wandb-summary.json
+2024-09-29 14:38:48,111 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:48,112 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:48,112 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:48,113 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:48,287 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 14:38:48,288 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:38:48,288 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:38:48,288 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:38:48,925 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/wandb-summary.json
+2024-09-29 14:38:50,056 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:38:50,926 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/config.yaml
+2024-09-29 14:38:50,927 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:38:51,639 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: pause
+2024-09-29 14:38:51,639 INFO    HandlerThread:20263 [handler.py:handle_request_pause():728] stopping system metrics thread
+2024-09-29 14:38:51,640 INFO    HandlerThread:20263 [system_monitor.py:finish():203] Stopping system monitor
+2024-09-29 14:38:51,640 DEBUG   SystemMonitor:20263 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-09-29 14:38:51,640 DEBUG   SystemMonitor:20263 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-09-29 14:38:51,640 INFO    HandlerThread:20263 [interfaces.py:finish():200] Joined cpu monitor
+2024-09-29 14:38:51,640 DEBUG   SystemMonitor:20263 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-09-29 14:38:51,640 INFO    HandlerThread:20263 [interfaces.py:finish():200] Joined disk monitor
+2024-09-29 14:38:51,641 INFO    HandlerThread:20263 [interfaces.py:finish():200] Joined memory monitor
+2024-09-29 14:38:51,641 INFO    HandlerThread:20263 [interfaces.py:finish():200] Joined network monitor
+2024-09-29 14:38:51,642 DEBUG   SenderThread:20263 [sender.py:send():391] send: stats
+2024-09-29 14:38:53,822 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:38:54,042 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:38:54,042 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:38:54,047 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:38:54,928 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:38:55,324 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:38:56,560 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:38:58,556 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:38:58,930 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:39:00,553 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:39:00,555 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:39:00,932 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:39:02,564 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:39:02,934 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:39:04,044 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:39:04,563 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:39:04,936 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:39:05,565 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:39:06,572 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:39:06,938 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:39:08,576 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:39:08,940 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:39:09,042 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:39:09,043 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:39:10,583 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:39:10,585 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:39:10,941 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:39:12,579 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:39:12,942 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:39:14,044 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:39:14,582 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:39:14,944 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:39:16,584 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:39:16,591 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:39:16,945 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:39:18,589 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:39:18,946 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:39:20,948 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:39:22,053 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:39:24,043 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:39:24,043 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:39:24,088 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:39:27,394 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:39:30,596 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:39:32,597 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:39:32,955 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:39:34,044 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:39:38,053 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:39:39,043 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:39:39,044 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:39:42,605 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:39:43,607 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:39:44,045 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:39:44,963 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:39:49,053 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:39:54,043 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:39:54,044 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:39:54,083 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:39:54,321 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:39:54,604 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:39:56,971 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:40:00,054 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:40:04,045 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:40:05,054 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:40:06,608 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:40:08,978 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:40:09,043 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:40:09,044 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:40:10,290 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:40:14,045 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:40:16,055 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:40:18,616 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:40:20,986 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:40:21,055 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:40:24,043 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:40:24,044 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:40:24,088 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:40:26,241 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:40:30,615 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:40:31,617 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:40:32,994 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:40:34,045 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:40:37,056 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:40:39,044 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:40:39,044 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:40:42,382 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:40:42,623 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:40:44,046 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:40:45,002 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:40:48,057 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:40:53,057 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:40:54,044 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:40:54,045 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:40:54,092 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:40:54,623 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:40:57,010 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:40:58,626 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:41:04,046 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:41:04,057 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:41:06,634 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:41:09,018 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:41:09,044 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:41:09,045 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:41:09,695 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:41:14,046 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:41:15,057 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:41:18,638 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:41:20,058 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:41:21,026 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:41:24,044 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:41:24,045 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:41:24,088 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:41:25,261 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:41:30,648 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:41:30,649 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:41:33,034 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:41:34,047 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:41:36,058 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:41:39,044 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:41:39,044 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:41:41,653 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:41:42,654 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:41:44,047 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:41:45,042 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:41:47,059 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:41:52,059 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:41:54,045 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:41:54,045 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:41:54,088 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:41:54,652 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:41:57,053 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:41:57,655 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:42:03,060 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:42:04,047 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:42:06,663 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:42:08,665 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:42:09,045 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:42:09,046 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:42:09,061 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:42:14,048 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:42:14,060 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:42:18,668 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:42:19,060 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:42:21,069 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:42:24,045 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:42:24,046 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:42:24,088 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:42:24,414 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:42:30,060 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:42:30,672 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:42:33,077 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:42:34,048 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:42:36,061 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:42:39,045 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:42:39,045 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:42:41,306 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:42:42,689 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:42:44,048 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:42:45,085 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:42:47,062 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:42:52,062 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:42:54,045 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:42:54,046 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:42:54,088 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:42:54,684 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:42:57,093 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:42:57,686 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:43:03,062 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:43:04,048 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:43:06,688 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:43:08,690 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:43:09,046 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:43:09,046 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:43:09,101 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:43:14,049 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:43:14,062 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:43:18,689 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:43:19,062 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:43:21,108 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:43:24,046 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:43:24,047 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:43:24,087 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:43:24,421 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:43:30,063 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:43:34,049 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:43:35,063 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:43:39,046 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:43:39,046 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:43:40,279 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:43:44,049 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:43:46,064 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:43:50,700 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:43:51,702 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:43:53,129 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:43:54,046 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:43:54,047 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:43:54,052 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:43:57,234 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:44:03,065 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:44:04,050 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:44:08,067 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:44:09,047 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:44:09,047 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:44:13,424 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:44:14,050 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:44:19,065 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:44:22,708 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:44:24,047 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:44:24,048 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:44:24,053 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:44:24,237 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:44:25,149 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:44:30,066 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:44:34,050 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:44:36,066 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:44:39,047 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:44:39,048 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:44:41,260 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:44:44,051 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:44:47,066 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:44:52,067 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:44:54,047 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:44:54,048 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:44:54,091 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:44:54,717 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:44:57,169 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:44:57,718 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:45:03,067 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:45:04,051 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:45:08,068 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:45:09,048 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:45:09,048 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:45:13,299 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:45:14,051 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:45:19,067 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:45:24,048 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:45:24,049 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:45:24,091 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:45:24,255 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:45:26,918 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:45:29,190 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:45:30,068 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:45:34,052 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:45:35,068 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:45:39,047 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:45:39,048 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:45:40,300 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:45:44,052 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:45:46,069 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:45:51,069 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:45:54,048 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:45:54,049 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:45:54,091 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:45:56,314 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:45:58,742 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:46:01,211 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:46:02,070 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:46:04,052 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:46:07,070 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:46:09,048 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:46:09,049 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:46:12,255 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:46:14,053 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:46:18,071 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:46:24,048 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:46:24,049 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:46:24,092 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:46:24,294 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:46:30,071 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:46:30,757 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:46:33,232 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:46:34,053 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:46:35,071 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:46:39,049 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:46:39,049 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:46:40,566 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:46:44,053 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:46:46,072 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:46:51,072 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:46:54,049 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:46:54,049 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:46:54,091 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:46:56,342 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:47:02,072 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:47:02,798 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:47:04,054 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:47:05,253 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:47:07,073 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:47:09,048 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:47:09,049 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:47:12,325 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:47:14,054 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:47:18,073 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:47:23,074 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:47:24,049 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:47:24,050 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:47:24,092 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:47:28,230 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:47:34,054 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:47:34,073 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:47:34,777 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:47:37,273 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:47:39,049 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:47:39,050 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:47:39,318 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:47:44,054 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:47:45,074 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:47:50,074 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:47:54,050 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:47:54,050 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:47:54,091 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:47:55,239 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:48:01,075 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:48:04,055 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:48:06,075 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:48:06,792 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:48:09,050 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:48:09,051 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:48:09,294 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:48:11,311 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:48:14,055 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:48:17,076 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:48:22,076 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:48:24,050 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:48:24,051 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:48:24,091 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:48:27,336 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:48:33,077 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:48:34,056 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:48:38,800 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:48:38,801 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:48:39,050 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:48:39,051 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:48:41,316 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:48:44,056 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:48:44,077 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:48:49,077 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:48:54,051 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:48:54,052 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:48:54,092 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:48:54,282 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:49:00,077 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:49:04,056 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:49:05,078 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:49:09,051 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:49:09,052 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:49:10,424 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:49:10,809 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:49:13,336 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:49:14,056 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:49:16,078 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:49:21,078 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:49:24,051 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:49:24,052 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:49:24,092 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:49:26,369 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:49:32,079 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:49:34,057 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:49:38,079 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:49:39,051 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:49:39,051 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:49:42,870 ERROR   FileStreamThread:20263 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/wr9s7d0t/file_stream
+NoneType: None
+2024-09-29 14:49:43,871 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:49:44,057 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:49:45,357 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:49:49,080 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:49:54,052 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 14:49:54,052 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 14:49:54,096 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 14:49:55,468 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:50:00,146 DEBUG   SenderThread:20263 [sender.py:send():391] send: exit
+2024-09-29 14:50:00,147 INFO    SenderThread:20263 [sender.py:send_exit():598] handling exit code: 0
+2024-09-29 14:50:00,147 INFO    SenderThread:20263 [sender.py:send_exit():600] handling runtime: 31
+2024-09-29 14:50:00,147 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:50:00,147 INFO    SenderThread:20263 [sender.py:send_exit():606] send defer
+2024-09-29 14:50:00,147 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: defer
+2024-09-29 14:50:00,147 INFO    HandlerThread:20263 [handler.py:handle_request_defer():184] handle defer: 0
+2024-09-29 14:50:00,148 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: defer
+2024-09-29 14:50:00,148 INFO    SenderThread:20263 [sender.py:send_request_defer():622] handle sender defer: 0
+2024-09-29 14:50:00,148 INFO    SenderThread:20263 [sender.py:transition_state():626] send defer: 1
+2024-09-29 14:50:00,148 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: defer
+2024-09-29 14:50:00,148 INFO    HandlerThread:20263 [handler.py:handle_request_defer():184] handle defer: 1
+2024-09-29 14:50:00,148 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: defer
+2024-09-29 14:50:00,148 INFO    SenderThread:20263 [sender.py:send_request_defer():622] handle sender defer: 1
+2024-09-29 14:50:00,148 INFO    SenderThread:20263 [sender.py:transition_state():626] send defer: 2
+2024-09-29 14:50:00,148 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: defer
+2024-09-29 14:50:00,148 INFO    HandlerThread:20263 [handler.py:handle_request_defer():184] handle defer: 2
+2024-09-29 14:50:00,148 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: defer
+2024-09-29 14:50:00,149 INFO    SenderThread:20263 [sender.py:send_request_defer():622] handle sender defer: 2
+2024-09-29 14:50:00,149 INFO    SenderThread:20263 [sender.py:transition_state():626] send defer: 3
+2024-09-29 14:50:00,149 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: defer
+2024-09-29 14:50:00,149 INFO    HandlerThread:20263 [handler.py:handle_request_defer():184] handle defer: 3
+2024-09-29 14:50:00,149 DEBUG   SenderThread:20263 [sender.py:send():391] send: history
+2024-09-29 14:50:00,149 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 14:50:00,150 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:50:00,150 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: defer
+2024-09-29 14:50:00,150 INFO    SenderThread:20263 [sender.py:send_request_defer():622] handle sender defer: 3
+2024-09-29 14:50:00,150 INFO    SenderThread:20263 [sender.py:transition_state():626] send defer: 4
+2024-09-29 14:50:00,150 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: defer
+2024-09-29 14:50:00,150 INFO    HandlerThread:20263 [handler.py:handle_request_defer():184] handle defer: 4
+2024-09-29 14:50:00,150 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: defer
+2024-09-29 14:50:00,150 INFO    SenderThread:20263 [sender.py:send_request_defer():622] handle sender defer: 4
+2024-09-29 14:50:00,150 INFO    SenderThread:20263 [sender.py:transition_state():626] send defer: 5
+2024-09-29 14:50:00,150 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: defer
+2024-09-29 14:50:00,150 INFO    HandlerThread:20263 [handler.py:handle_request_defer():184] handle defer: 5
+2024-09-29 14:50:00,151 DEBUG   SenderThread:20263 [sender.py:send():391] send: summary
+2024-09-29 14:50:00,151 INFO    SenderThread:20263 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 14:50:00,151 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: defer
+2024-09-29 14:50:00,151 INFO    SenderThread:20263 [sender.py:send_request_defer():622] handle sender defer: 5
+2024-09-29 14:50:00,151 INFO    SenderThread:20263 [sender.py:transition_state():626] send defer: 6
+2024-09-29 14:50:00,151 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: defer
+2024-09-29 14:50:00,151 INFO    HandlerThread:20263 [handler.py:handle_request_defer():184] handle defer: 6
+2024-09-29 14:50:00,152 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: defer
+2024-09-29 14:50:00,152 INFO    SenderThread:20263 [sender.py:send_request_defer():622] handle sender defer: 6
+2024-09-29 14:50:00,152 INFO    SenderThread:20263 [sender.py:transition_state():626] send defer: 7
+2024-09-29 14:50:00,152 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 14:50:00,152 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: defer
+2024-09-29 14:50:00,152 INFO    HandlerThread:20263 [handler.py:handle_request_defer():184] handle defer: 7
+2024-09-29 14:50:00,152 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: defer
+2024-09-29 14:50:00,152 INFO    SenderThread:20263 [sender.py:send_request_defer():622] handle sender defer: 7
+2024-09-29 14:50:00,366 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/wandb-summary.json
+2024-09-29 14:50:00,664 INFO    SenderThread:20263 [sender.py:transition_state():626] send defer: 8
+2024-09-29 14:50:00,665 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: defer
+2024-09-29 14:50:00,665 INFO    HandlerThread:20263 [handler.py:handle_request_defer():184] handle defer: 8
+2024-09-29 14:50:00,666 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: defer
+2024-09-29 14:50:00,666 INFO    SenderThread:20263 [sender.py:send_request_defer():622] handle sender defer: 8
+2024-09-29 14:50:00,666 INFO    SenderThread:20263 [job_builder.py:build():443] Attempting to build job artifact
+2024-09-29 14:50:00,667 INFO    SenderThread:20263 [job_builder.py:_get_source_type():572] is repo sourced job
+2024-09-29 14:50:00,667 INFO    SenderThread:20263 [job_builder.py:_get_program_relpath():590] run is notebook based run
+2024-09-29 14:50:00,898 INFO    SenderThread:20263 [job_builder.py:build():548] adding wandb-job metadata file
+2024-09-29 14:50:01,147 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-29 14:50:01,367 INFO    Thread-12 :20263 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+2024-09-29 14:50:01,764 INFO    SenderThread:20263 [sender.py:transition_state():626] send defer: 9
+2024-09-29 14:50:01,764 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: poll_exit
+2024-09-29 14:50:01,764 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: defer
+2024-09-29 14:50:01,764 INFO    HandlerThread:20263 [handler.py:handle_request_defer():184] handle defer: 9
+2024-09-29 14:50:01,765 DEBUG   SenderThread:20263 [sender.py:send():391] send: artifact
+2024-09-29 14:50:02,147 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-29 14:50:02,720 ERROR   SenderThread:20263 [internal_api.py:execute():349] 404 response executing GraphQL.
+2024-09-29 14:50:02,720 ERROR   SenderThread:20263 [internal_api.py:execute():350] {"errors":[{"message":"failed to find run loss_choice_02/wr9s7d0t","path":["useArtifact"]}],"data":{"useArtifact":null}}
+2024-09-29 14:50:02,720 ERROR   SenderThread:20263 [sender.py:send_artifact():1551] send_artifact: failed for artifact "job/job-git_github.com_e1vanov_precondnn.git_main.ipynb": [Errno 32] Broken pipe
+2024-09-29 14:50:02,720 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: defer
+2024-09-29 14:50:02,720 INFO    SenderThread:20263 [sender.py:send_request_defer():622] handle sender defer: 9
+2024-09-29 14:50:02,720 INFO    SenderThread:20263 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-09-29 14:50:03,369 INFO    SenderThread:20263 [dir_watcher.py:finish():388] scan: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files
+2024-09-29 14:50:03,369 INFO    SenderThread:20263 [dir_watcher.py:finish():402] scan save: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log output.log
+2024-09-29 14:50:03,370 INFO    SenderThread:20263 [dir_watcher.py:finish():402] scan save: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/wandb-summary.json wandb-summary.json
+2024-09-29 14:50:03,370 INFO    SenderThread:20263 [dir_watcher.py:finish():402] scan save: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/config.yaml config.yaml
+2024-09-29 14:50:03,376 INFO    SenderThread:20263 [dir_watcher.py:finish():402] scan save: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/requirements.txt requirements.txt
+2024-09-29 14:50:03,377 INFO    SenderThread:20263 [dir_watcher.py:finish():402] scan save: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/conda-environment.yaml conda-environment.yaml
+2024-09-29 14:50:03,377 INFO    SenderThread:20263 [dir_watcher.py:finish():402] scan save: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/wandb-metadata.json wandb-metadata.json
+2024-09-29 14:50:03,380 INFO    SenderThread:20263 [sender.py:transition_state():626] send defer: 10
+2024-09-29 14:50:03,382 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: poll_exit
+2024-09-29 14:50:03,382 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: defer
+2024-09-29 14:50:03,382 INFO    HandlerThread:20263 [handler.py:handle_request_defer():184] handle defer: 10
+2024-09-29 14:50:03,386 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: defer
+2024-09-29 14:50:03,386 INFO    SenderThread:20263 [sender.py:send_request_defer():622] handle sender defer: 10
+2024-09-29 14:50:03,386 INFO    SenderThread:20263 [file_pusher.py:finish():169] shutting down file pusher
+2024-09-29 14:50:03,806 ERROR   wandb-upload_0:20263 [internal_api.py:execute():349] 404 response executing GraphQL.
+2024-09-29 14:50:03,806 ERROR   wandb-upload_0:20263 [internal_api.py:execute():350] {"errors":[{"message":"run loss_choice_02/wr9s7d0t not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2024-09-29 14:50:03,807 ERROR   Thread-11 (_thread_body):20263 [step_upload.py:_handle_event():144] Failed to upload file: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/output.log
+Traceback (most recent call last):
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 345, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2500, in upload_urls
+    query_result = self.gql(
+                   ^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 317, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 352, in execute
+    wandb.termerror(f"Error while calling W&B API: {error} ({response})")
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 64, in termerror
+    _log(
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 103, in _log
+    click.echo(line, file=sys.stderr, nl=newline)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/click/utils.py", line 318, in echo
+    file.write(out)  # type: ignore
+    ^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/egor/miniconda3/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/filesync/step_upload.py", line 223, in run_and_notify
+    self._do_upload(event)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/filesync/step_upload.py", line 243, in _do_upload
+    job.run()
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/filesync/upload_job.py", line 56, in run
+    self.push()
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/filesync/upload_job.py", line 105, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/apis/normalize.py", line 87, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2500, in upload_urls
+    query_result = self.gql(
+                   ^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 317, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 352, in execute
+    wandb.termerror(f"Error while calling W&B API: {error} ({response})")
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 64, in termerror
+    _log(
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 103, in _log
+    click.echo(line, file=sys.stderr, nl=newline)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/click/utils.py", line 318, in echo
+    file.write(out)  # type: ignore
+    ^^^^^^^^^^^^^^^
+wandb.errors.CommError: [Errno 32] Broken pipe
+2024-09-29 14:50:04,149 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-29 14:50:04,149 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: poll_exit
+2024-09-29 14:50:04,190 ERROR   wandb-upload_3:20263 [internal_api.py:execute():349] 404 response executing GraphQL.
+2024-09-29 14:50:04,190 ERROR   wandb-upload_3:20263 [internal_api.py:execute():350] {"errors":[{"message":"run loss_choice_02/wr9s7d0t not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2024-09-29 14:50:04,190 ERROR   Thread-11 (_thread_body):20263 [step_upload.py:_handle_event():144] Failed to upload file: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/requirements.txt
+Traceback (most recent call last):
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 345, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2500, in upload_urls
+    query_result = self.gql(
+                   ^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 317, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 352, in execute
+    wandb.termerror(f"Error while calling W&B API: {error} ({response})")
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 64, in termerror
+    _log(
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 103, in _log
+    click.echo(line, file=sys.stderr, nl=newline)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/click/utils.py", line 318, in echo
+    file.write(out)  # type: ignore
+    ^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/egor/miniconda3/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/filesync/step_upload.py", line 223, in run_and_notify
+    self._do_upload(event)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/filesync/step_upload.py", line 243, in _do_upload
+    job.run()
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/filesync/upload_job.py", line 56, in run
+    self.push()
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/filesync/upload_job.py", line 105, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/apis/normalize.py", line 87, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2500, in upload_urls
+    query_result = self.gql(
+                   ^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 317, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 352, in execute
+    wandb.termerror(f"Error while calling W&B API: {error} ({response})")
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 64, in termerror
+    _log(
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 103, in _log
+    click.echo(line, file=sys.stderr, nl=newline)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/click/utils.py", line 318, in echo
+    file.write(out)  # type: ignore
+    ^^^^^^^^^^^^^^^
+wandb.errors.CommError: [Errno 32] Broken pipe
+2024-09-29 14:50:04,211 ERROR   wandb-upload_4:20263 [internal_api.py:execute():349] 404 response executing GraphQL.
+2024-09-29 14:50:04,211 ERROR   wandb-upload_4:20263 [internal_api.py:execute():350] {"errors":[{"message":"run loss_choice_02/wr9s7d0t not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2024-09-29 14:50:04,212 ERROR   Thread-11 (_thread_body):20263 [step_upload.py:_handle_event():144] Failed to upload file: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/conda-environment.yaml
+Traceback (most recent call last):
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 345, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2500, in upload_urls
+    query_result = self.gql(
+                   ^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 317, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 352, in execute
+    wandb.termerror(f"Error while calling W&B API: {error} ({response})")
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 64, in termerror
+    _log(
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 103, in _log
+    click.echo(line, file=sys.stderr, nl=newline)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/click/utils.py", line 318, in echo
+    file.write(out)  # type: ignore
+    ^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/egor/miniconda3/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/filesync/step_upload.py", line 223, in run_and_notify
+    self._do_upload(event)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/filesync/step_upload.py", line 243, in _do_upload
+    job.run()
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/filesync/upload_job.py", line 56, in run
+    self.push()
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/filesync/upload_job.py", line 105, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/apis/normalize.py", line 87, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2500, in upload_urls
+    query_result = self.gql(
+                   ^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 317, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 352, in execute
+    wandb.termerror(f"Error while calling W&B API: {error} ({response})")
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 64, in termerror
+    _log(
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 103, in _log
+    click.echo(line, file=sys.stderr, nl=newline)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/click/utils.py", line 318, in echo
+    file.write(out)  # type: ignore
+    ^^^^^^^^^^^^^^^
+wandb.errors.CommError: [Errno 32] Broken pipe
+2024-09-29 14:50:04,230 ERROR   wandb-upload_2:20263 [internal_api.py:execute():349] 404 response executing GraphQL.
+2024-09-29 14:50:04,230 ERROR   wandb-upload_2:20263 [internal_api.py:execute():350] {"errors":[{"message":"run loss_choice_02/wr9s7d0t not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2024-09-29 14:50:04,230 ERROR   wandb-upload_1:20263 [internal_api.py:execute():349] 404 response executing GraphQL.
+2024-09-29 14:50:04,230 ERROR   wandb-upload_1:20263 [internal_api.py:execute():350] {"errors":[{"message":"run loss_choice_02/wr9s7d0t not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2024-09-29 14:50:04,230 ERROR   Thread-11 (_thread_body):20263 [step_upload.py:_handle_event():144] Failed to upload file: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/config.yaml
+Traceback (most recent call last):
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 345, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2500, in upload_urls
+    query_result = self.gql(
+                   ^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 317, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 352, in execute
+    wandb.termerror(f"Error while calling W&B API: {error} ({response})")
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 64, in termerror
+    _log(
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 103, in _log
+    click.echo(line, file=sys.stderr, nl=newline)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/click/utils.py", line 318, in echo
+    file.write(out)  # type: ignore
+    ^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/egor/miniconda3/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/filesync/step_upload.py", line 223, in run_and_notify
+    self._do_upload(event)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/filesync/step_upload.py", line 243, in _do_upload
+    job.run()
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/filesync/upload_job.py", line 56, in run
+    self.push()
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/filesync/upload_job.py", line 105, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/apis/normalize.py", line 87, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2500, in upload_urls
+    query_result = self.gql(
+                   ^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 317, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 352, in execute
+    wandb.termerror(f"Error while calling W&B API: {error} ({response})")
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 64, in termerror
+    _log(
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 103, in _log
+    click.echo(line, file=sys.stderr, nl=newline)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/click/utils.py", line 318, in echo
+    file.write(out)  # type: ignore
+    ^^^^^^^^^^^^^^^
+wandb.errors.CommError: [Errno 32] Broken pipe
+2024-09-29 14:50:04,233 ERROR   Thread-11 (_thread_body):20263 [step_upload.py:_handle_event():144] Failed to upload file: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/files/wandb-summary.json
+Traceback (most recent call last):
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 345, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2500, in upload_urls
+    query_result = self.gql(
+                   ^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 317, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 352, in execute
+    wandb.termerror(f"Error while calling W&B API: {error} ({response})")
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 64, in termerror
+    _log(
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 103, in _log
+    click.echo(line, file=sys.stderr, nl=newline)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/click/utils.py", line 318, in echo
+    file.write(out)  # type: ignore
+    ^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/egor/miniconda3/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/filesync/step_upload.py", line 223, in run_and_notify
+    self._do_upload(event)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/filesync/step_upload.py", line 243, in _do_upload
+    job.run()
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/filesync/upload_job.py", line 56, in run
+    self.push()
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/filesync/upload_job.py", line 105, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/apis/normalize.py", line 87, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2500, in upload_urls
+    query_result = self.gql(
+                   ^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 317, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 352, in execute
+    wandb.termerror(f"Error while calling W&B API: {error} ({response})")
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 64, in termerror
+    _log(
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 103, in _log
+    click.echo(line, file=sys.stderr, nl=newline)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/click/utils.py", line 318, in echo
+    file.write(out)  # type: ignore
+    ^^^^^^^^^^^^^^^
+wandb.errors.CommError: [Errno 32] Broken pipe
+2024-09-29 14:50:04,335 WARNING StreamThr :20263 [internal.py:is_dead():413] Internal process exiting, parent pid 20201 disappeared
+2024-09-29 14:50:04,336 ERROR   StreamThr :20263 [internal.py:wandb_internal():151] Internal process shutdown.
+2024-09-29 14:50:04,437 INFO    Thread-11 (_thread_body):20263 [sender.py:transition_state():626] send defer: 11
+2024-09-29 14:50:04,442 DEBUG   HandlerThread:20263 [handler.py:handle_request():158] handle_request: defer
+2024-09-29 14:50:04,442 INFO    HandlerThread:20263 [handler.py:handle_request_defer():184] handle defer: 11
+2024-09-29 14:50:04,442 INFO    HandlerThread:20263 [handler.py:finish():884] shutting down handler
+2024-09-29 14:50:04,442 INFO    WriterThread:20263 [datastore.py:close():296] close: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_143819-wr9s7d0t/run-wr9s7d0t.wandb
+2024-09-29 14:50:04,445 DEBUG   SenderThread:20263 [sender.py:send_request():418] send_request: defer
+2024-09-29 14:50:04,445 INFO    SenderThread:20263 [sender.py:send_request_defer():622] handle sender defer: 11
+2024-09-29 14:50:04,445 INFO    SenderThread:20263 [file_pusher.py:join():175] waiting for file pusher
+2024-09-29 14:50:04,445 INFO    SenderThread:20263 [sender.py:transition_state():626] send defer: 12
+2024-09-29 14:50:04,445 INFO    SenderThread:20263 [sender.py:finish():1631] shutting down sender
+2024-09-29 14:50:04,446 INFO    SenderThread:20263 [file_pusher.py:finish():169] shutting down file pusher
+2024-09-29 14:50:04,446 INFO    SenderThread:20263 [file_pusher.py:join():175] waiting for file pusher
+2024-09-29 14:50:04,446 INFO    SenderThread:20263 [file_stream.py:finish():601] file stream finish called
+2024-09-29 14:50:04,671 ERROR   FileStreamThread:20263 [file_stream.py:_thread_except_body():500] generic exception in filestream thread
+Traceback (most recent call last):
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/file_stream.py", line 496, in _thread_except_body
+    self._thread_body()
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/file_stream.py", line 452, in _thread_body
+    success = self._send(ready_chunks, uploaded=uploaded)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/file_stream.py", line 541, in _send
+    self._handle_response(
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/file_stream.py", line 507, in _handle_response
+    wandb.termerror(
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 64, in termerror
+    _log(
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 103, in _log
+    click.echo(line, file=sys.stderr, nl=newline)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/click/utils.py", line 318, in echo
+    file.write(out)  # type: ignore
+    ^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2024-09-29 14:50:04,915 INFO    SenderThread:20263 [file_stream.py:finish():605] file stream finish is done
+2024-09-29 14:50:04,915 ERROR   SenderThread:20263 [file_stream.py:finish():607] FileStream exception
+Traceback (most recent call last):
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/file_stream.py", line 496, in _thread_except_body
+    self._thread_body()
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/file_stream.py", line 452, in _thread_body
+    success = self._send(ready_chunks, uploaded=uploaded)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/file_stream.py", line 541, in _send
+    self._handle_response(
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/file_stream.py", line 507, in _handle_response
+    wandb.termerror(
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 64, in termerror
+    _log(
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 103, in _log
+    click.echo(line, file=sys.stderr, nl=newline)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/click/utils.py", line 318, in echo
+    file.write(out)  # type: ignore
+    ^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2024-09-29 14:50:04,916 ERROR   StreamThr :20263 [internal.py:wandb_internal():173] Thread SenderThread:
+Traceback (most recent call last):
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_util.py", line 48, in run
+    self._run()
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_util.py", line 100, in _run
+    self._finish()
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal.py", line 330, in _finish
+    self._sm.finish()
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/sender.py", line 1643, in finish
+    self._fs.finish(self._exit_code)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/file_stream.py", line 610, in finish
+    raise self._exc_info[1].with_traceback(self._exc_info[2])
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/file_stream.py", line 496, in _thread_except_body
+    self._thread_body()
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/file_stream.py", line 452, in _thread_body
+    success = self._send(ready_chunks, uploaded=uploaded)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/file_stream.py", line 541, in _send
+    self._handle_response(
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/file_stream.py", line 507, in _handle_response
+    wandb.termerror(
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 64, in termerror
+    _log(
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 103, in _log
+    click.echo(line, file=sys.stderr, nl=newline)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/click/utils.py", line 318, in echo
+    file.write(out)  # type: ignore
+    ^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe

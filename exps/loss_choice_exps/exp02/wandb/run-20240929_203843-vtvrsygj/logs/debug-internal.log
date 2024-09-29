@@ -1,0 +1,104 @@
+2024-09-29 20:38:43,053 INFO    StreamThr :32513 [internal.py:wandb_internal():85] W&B internal server running at pid: 32513, started at: 2024-09-29 20:38:43.052660
+2024-09-29 20:38:43,054 DEBUG   HandlerThread:32513 [handler.py:handle_request():158] handle_request: status
+2024-09-29 20:38:43,066 INFO    WriterThread:32513 [datastore.py:open_for_write():87] open: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_203843-vtvrsygj/run-vtvrsygj.wandb
+2024-09-29 20:38:43,067 DEBUG   SenderThread:32513 [sender.py:send():391] send: header
+2024-09-29 20:38:43,096 DEBUG   SenderThread:32513 [sender.py:send():391] send: run
+2024-09-29 20:38:44,012 INFO    SenderThread:32513 [dir_watcher.py:__init__():211] watching files in: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_203843-vtvrsygj/files
+2024-09-29 20:38:44,012 INFO    SenderThread:32513 [sender.py:_start_run_threads():1200] run started: vtvrsygj with start time 1727631523.053756
+2024-09-29 20:38:44,025 DEBUG   HandlerThread:32513 [handler.py:handle_request():158] handle_request: run_start
+2024-09-29 20:38:44,026 DEBUG   HandlerThread:32513 [system_info.py:__init__():26] System info init
+2024-09-29 20:38:44,026 DEBUG   HandlerThread:32513 [system_info.py:__init__():41] System info init done
+2024-09-29 20:38:44,026 INFO    HandlerThread:32513 [system_monitor.py:start():194] Starting system monitor
+2024-09-29 20:38:44,026 INFO    SystemMonitor:32513 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-09-29 20:38:44,027 INFO    HandlerThread:32513 [system_monitor.py:probe():214] Collecting system info
+2024-09-29 20:38:44,027 INFO    SystemMonitor:32513 [interfaces.py:start():188] Started cpu monitoring
+2024-09-29 20:38:44,027 INFO    SystemMonitor:32513 [interfaces.py:start():188] Started disk monitoring
+2024-09-29 20:38:44,028 INFO    SystemMonitor:32513 [interfaces.py:start():188] Started memory monitoring
+2024-09-29 20:38:44,029 INFO    SystemMonitor:32513 [interfaces.py:start():188] Started network monitoring
+2024-09-29 20:38:44,053 DEBUG   HandlerThread:32513 [system_info.py:probe():152] Probing system
+2024-09-29 20:38:44,055 DEBUG   HandlerThread:32513 [system_info.py:_probe_git():137] Probing git
+2024-09-29 20:38:44,061 DEBUG   HandlerThread:32513 [system_info.py:_probe_git():145] Probing git done
+2024-09-29 20:38:44,061 DEBUG   HandlerThread:32513 [system_info.py:probe():200] Probing system done
+2024-09-29 20:38:44,061 DEBUG   HandlerThread:32513 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-88-generic-x86_64-with-glibc2.35', 'python': '3.11.5', 'heartbeatAt': '2024-09-29T17:38:44.053753', 'startedAt': '2024-09-29T17:38:43.047275', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'main.ipynb', 'codePathLocal': 'main.ipynb', 'root': '/home/egor/desktop/tmp/precondnn', 'git': {'remote': 'git@github.com:e1vanov/precondnn.git', 'commit': 'b80f5b6636af1f2441be2fb5337e774b15d2a187'}, 'email': 's02210401@gse.cs.msu.ru', 'host': 'egor-MacBookAir', 'username': 'egor', 'executable': '/home/egor/miniconda3/bin/python', 'cpu_count': 2, 'cpu_count_logical': 4, 'cpu_freq': {'current': 2.6145, 'min': 500.0, 'max': 2900.0}, 'cpu_freq_per_core': [{'current': 2.9, 'min': 500.0, 'max': 2900.0}, {'current': 2.9, 'min': 500.0, 'max': 2900.0}, {'current': 1.758, 'min': 500.0, 'max': 2900.0}, {'current': 2.9, 'min': 500.0, 'max': 2900.0}], 'disk': {'/': {'total': 457.2810821533203, 'used': 57.62306594848633}}, 'memory': {'total': 7.656715393066406}}
+2024-09-29 20:38:44,061 INFO    HandlerThread:32513 [system_monitor.py:probe():224] Finished collecting system info
+2024-09-29 20:38:44,061 INFO    HandlerThread:32513 [system_monitor.py:probe():227] Publishing system info
+2024-09-29 20:38:44,061 DEBUG   HandlerThread:32513 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-09-29 20:38:45,015 INFO    Thread-12 :32513 [dir_watcher.py:_on_file_created():271] file/dir created: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_203843-vtvrsygj/files/conda-environment.yaml
+2024-09-29 20:38:50,015 INFO    Thread-12 :32513 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_203843-vtvrsygj/files/conda-environment.yaml
+2024-09-29 20:38:50,144 DEBUG   HandlerThread:32513 [system_info.py:_save_conda():224] Saving conda packages done
+2024-09-29 20:38:50,144 INFO    HandlerThread:32513 [system_monitor.py:probe():229] Finished publishing system info
+2024-09-29 20:38:50,146 DEBUG   HandlerThread:32513 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 20:38:50,146 DEBUG   HandlerThread:32513 [handler.py:handle_request():158] handle_request: keepalive
+2024-09-29 20:38:50,146 DEBUG   SenderThread:32513 [sender.py:send():391] send: files
+2024-09-29 20:38:50,146 INFO    SenderThread:32513 [sender.py:_save_file():1466] saving file wandb-metadata.json with policy now
+2024-09-29 20:38:50,337 DEBUG   HandlerThread:32513 [handler.py:handle_request():158] handle_request: python_packages
+2024-09-29 20:38:50,338 DEBUG   SenderThread:32513 [sender.py:send_request():418] send_request: python_packages
+2024-09-29 20:38:50,339 DEBUG   SenderThread:32513 [sender.py:send():391] send: telemetry
+2024-09-29 20:38:50,340 DEBUG   HandlerThread:32513 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 20:38:50,340 DEBUG   HandlerThread:32513 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 20:38:50,341 DEBUG   SenderThread:32513 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 20:38:50,869 INFO    wandb-upload_0:32513 [upload_job.py:push():130] Uploaded file /tmp/tmp602d1bs8wandb/7zcfs26z-wandb-metadata.json
+2024-09-29 20:38:51,016 INFO    Thread-12 :32513 [dir_watcher.py:_on_file_created():271] file/dir created: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_203843-vtvrsygj/files/output.log
+2024-09-29 20:38:51,016 INFO    Thread-12 :32513 [dir_watcher.py:_on_file_created():271] file/dir created: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_203843-vtvrsygj/files/requirements.txt
+2024-09-29 20:38:51,016 INFO    Thread-12 :32513 [dir_watcher.py:_on_file_created():271] file/dir created: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_203843-vtvrsygj/files/wandb-metadata.json
+2024-09-29 20:38:53,016 INFO    Thread-12 :32513 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_203843-vtvrsygj/files/output.log
+2024-09-29 20:38:54,344 DEBUG   HandlerThread:32513 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 20:38:56,017 INFO    Thread-12 :32513 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_203843-vtvrsygj/files/output.log
+2024-09-29 20:39:00,338 DEBUG   HandlerThread:32513 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 20:39:00,339 DEBUG   HandlerThread:32513 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 20:39:05,338 DEBUG   HandlerThread:32513 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 20:39:05,339 DEBUG   SenderThread:32513 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 20:39:05,563 DEBUG   HandlerThread:32513 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 20:39:10,339 DEBUG   HandlerThread:32513 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 20:39:11,339 DEBUG   HandlerThread:32513 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 20:39:17,344 DEBUG   HandlerThread:32513 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 20:39:18,024 INFO    Thread-12 :32513 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_203843-vtvrsygj/files/config.yaml
+2024-09-29 20:39:20,338 DEBUG   HandlerThread:32513 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 20:39:20,338 DEBUG   SenderThread:32513 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 20:39:20,380 DEBUG   HandlerThread:32513 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 20:39:22,558 DEBUG   HandlerThread:32513 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 20:39:28,339 DEBUG   HandlerThread:32513 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 20:39:30,339 DEBUG   HandlerThread:32513 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 20:39:33,340 DEBUG   HandlerThread:32513 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 20:39:35,338 DEBUG   HandlerThread:32513 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 20:39:35,339 DEBUG   SenderThread:32513 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 20:39:38,545 DEBUG   HandlerThread:32513 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 20:39:40,339 DEBUG   HandlerThread:32513 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 20:39:44,029 DEBUG   SystemMonitor:32513 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-09-29 20:39:44,030 DEBUG   SenderThread:32513 [sender.py:send():391] send: stats
+2024-09-29 20:39:44,033 DEBUG   HandlerThread:32513 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 20:39:49,340 DEBUG   HandlerThread:32513 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 20:39:50,340 DEBUG   HandlerThread:32513 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 20:39:50,341 DEBUG   SenderThread:32513 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 20:39:50,388 DEBUG   HandlerThread:32513 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 20:39:54,559 DEBUG   HandlerThread:32513 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 20:40:00,341 DEBUG   HandlerThread:32513 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 20:40:00,343 DEBUG   HandlerThread:32513 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 20:40:05,340 DEBUG   HandlerThread:32513 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 20:40:05,340 DEBUG   SenderThread:32513 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 20:40:05,816 DEBUG   HandlerThread:32513 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 20:40:10,341 DEBUG   HandlerThread:32513 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 20:40:11,343 DEBUG   HandlerThread:32513 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 20:40:14,032 DEBUG   SenderThread:32513 [sender.py:send():391] send: stats
+2024-09-29 20:40:17,343 DEBUG   HandlerThread:32513 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 20:40:20,341 DEBUG   HandlerThread:32513 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 20:40:20,342 DEBUG   SenderThread:32513 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 20:40:20,383 DEBUG   HandlerThread:32513 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 20:40:30,362 DEBUG   HandlerThread:32513 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 20:40:31,091 INFO    memory    :32513 [interfaces.py:monitor():138] Process proc.memory.rssMB has exited.
+2024-09-29 20:40:31,093 DEBUG   SystemMonitor:32513 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-09-29 20:40:31,094 INFO    cpu       :32513 [interfaces.py:monitor():138] Process proc.cpu.threads has exited.
+2024-09-29 20:40:31,094 DEBUG   SystemMonitor:32513 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-09-29 20:40:33,514 DEBUG   SenderThread:32513 [sender.py:send():391] send: stats
+2024-09-29 20:40:33,618 WARNING StreamThr :32513 [internal.py:is_dead():413] Internal process exiting, parent pid 32487 disappeared
+2024-09-29 20:40:33,618 ERROR   StreamThr :32513 [internal.py:wandb_internal():151] Internal process shutdown.
+2024-09-29 20:40:34,513 INFO    HandlerThread:32513 [handler.py:finish():884] shutting down handler
+2024-09-29 20:40:34,513 INFO    HandlerThread:32513 [system_monitor.py:finish():203] Stopping system monitor
+2024-09-29 20:40:34,513 INFO    HandlerThread:32513 [interfaces.py:finish():200] Joined cpu monitor
+2024-09-29 20:40:34,514 INFO    HandlerThread:32513 [interfaces.py:finish():200] Joined disk monitor
+2024-09-29 20:40:34,514 INFO    WriterThread:32513 [datastore.py:close():296] close: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_203843-vtvrsygj/run-vtvrsygj.wandb
+2024-09-29 20:40:34,515 INFO    HandlerThread:32513 [interfaces.py:finish():200] Joined memory monitor
+2024-09-29 20:40:34,516 INFO    HandlerThread:32513 [interfaces.py:finish():200] Joined network monitor
+2024-09-29 20:40:34,516 INFO    SenderThread:32513 [sender.py:finish():1631] shutting down sender
+2024-09-29 20:40:34,782 INFO    MainThread:32513 [internal.py:handle_exit():75] Internal process exited
+2024-09-29 20:40:38,006 INFO    Thread-12 :32513 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_203843-vtvrsygj/files/output.log

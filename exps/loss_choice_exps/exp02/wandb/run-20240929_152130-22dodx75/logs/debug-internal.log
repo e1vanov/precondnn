@@ -1,0 +1,869 @@
+2024-09-29 15:21:30,605 INFO    StreamThr :20430 [internal.py:wandb_internal():85] W&B internal server running at pid: 20430, started at: 2024-09-29 15:21:30.604637
+2024-09-29 15:21:30,609 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: status
+2024-09-29 15:21:30,626 INFO    WriterThread:20430 [datastore.py:open_for_write():87] open: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/run-22dodx75.wandb
+2024-09-29 15:21:30,627 DEBUG   SenderThread:20430 [sender.py:send():391] send: header
+2024-09-29 15:21:30,879 DEBUG   SenderThread:20430 [sender.py:send():391] send: run
+2024-09-29 15:21:31,864 INFO    SenderThread:20430 [dir_watcher.py:__init__():211] watching files in: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files
+2024-09-29 15:21:31,864 INFO    SenderThread:20430 [sender.py:_start_run_threads():1200] run started: 22dodx75 with start time 1727612490.604647
+2024-09-29 15:21:32,689 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: run_start
+2024-09-29 15:21:32,690 DEBUG   HandlerThread:20430 [system_info.py:__init__():26] System info init
+2024-09-29 15:21:32,690 DEBUG   HandlerThread:20430 [system_info.py:__init__():41] System info init done
+2024-09-29 15:21:32,690 INFO    HandlerThread:20430 [system_monitor.py:start():194] Starting system monitor
+2024-09-29 15:21:32,690 INFO    SystemMonitor:20430 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-09-29 15:21:32,690 INFO    HandlerThread:20430 [system_monitor.py:probe():214] Collecting system info
+2024-09-29 15:21:32,691 INFO    SystemMonitor:20430 [interfaces.py:start():188] Started cpu monitoring
+2024-09-29 15:21:32,691 INFO    SystemMonitor:20430 [interfaces.py:start():188] Started disk monitoring
+2024-09-29 15:21:32,691 INFO    SystemMonitor:20430 [interfaces.py:start():188] Started memory monitoring
+2024-09-29 15:21:32,692 INFO    SystemMonitor:20430 [interfaces.py:start():188] Started network monitoring
+2024-09-29 15:21:32,752 DEBUG   HandlerThread:20430 [system_info.py:probe():152] Probing system
+2024-09-29 15:21:32,753 DEBUG   HandlerThread:20430 [system_info.py:_probe_git():137] Probing git
+2024-09-29 15:21:32,758 DEBUG   HandlerThread:20430 [system_info.py:_probe_git():145] Probing git done
+2024-09-29 15:21:32,759 DEBUG   HandlerThread:20430 [system_info.py:probe():200] Probing system done
+2024-09-29 15:21:32,759 DEBUG   HandlerThread:20430 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-88-generic-x86_64-with-glibc2.35', 'python': '3.11.5', 'heartbeatAt': '2024-09-29T12:21:32.752333', 'startedAt': '2024-09-29T12:21:30.595592', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'main.ipynb', 'codePathLocal': 'main.ipynb', 'root': '/home/egor/desktop/tmp/precondnn', 'git': {'remote': 'git@github.com:e1vanov/precondnn.git', 'commit': 'b80f5b6636af1f2441be2fb5337e774b15d2a187'}, 'email': 's02210401@gse.cs.msu.ru', 'host': 'egor-MacBookAir', 'username': 'egor', 'executable': '/home/egor/miniconda3/bin/python', 'cpu_count': 2, 'cpu_count_logical': 4, 'cpu_freq': {'current': 2.625, 'min': 500.0, 'max': 2900.0}, 'cpu_freq_per_core': [{'current': 2.9, 'min': 500.0, 'max': 2900.0}, {'current': 2.9, 'min': 500.0, 'max': 2900.0}, {'current': 2.9, 'min': 500.0, 'max': 2900.0}, {'current': 2.506, 'min': 500.0, 'max': 2900.0}], 'disk': {'/': {'total': 457.2810821533203, 'used': 57.59911346435547}}, 'memory': {'total': 7.656715393066406}}
+2024-09-29 15:21:32,759 INFO    HandlerThread:20430 [system_monitor.py:probe():224] Finished collecting system info
+2024-09-29 15:21:32,759 INFO    HandlerThread:20430 [system_monitor.py:probe():227] Publishing system info
+2024-09-29 15:21:32,759 DEBUG   HandlerThread:20430 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-09-29 15:21:32,866 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_created():271] file/dir created: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/conda-environment.yaml
+2024-09-29 15:21:37,282 DEBUG   HandlerThread:20430 [system_info.py:_save_conda():224] Saving conda packages done
+2024-09-29 15:21:37,282 INFO    HandlerThread:20430 [system_monitor.py:probe():229] Finished publishing system info
+2024-09-29 15:21:37,282 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 15:21:37,283 DEBUG   SenderThread:20430 [sender.py:send():391] send: files
+2024-09-29 15:21:37,283 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-metadata.json with policy now
+2024-09-29 15:21:37,450 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: python_packages
+2024-09-29 15:21:37,451 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: python_packages
+2024-09-29 15:21:37,452 DEBUG   SenderThread:20430 [sender.py:send():391] send: telemetry
+2024-09-29 15:21:37,452 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 15:21:37,453 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 15:21:37,453 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 15:21:37,865 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/conda-environment.yaml
+2024-09-29 15:21:37,866 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_created():271] file/dir created: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/requirements.txt
+2024-09-29 15:21:37,866 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_created():271] file/dir created: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-metadata.json
+2024-09-29 15:21:37,866 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_created():271] file/dir created: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/output.log
+2024-09-29 15:21:37,959 INFO    wandb-upload_0:20430 [upload_job.py:push():130] Uploaded file /tmp/tmpkagdpplewandb/f8ps5yhv-wandb-metadata.json
+2024-09-29 15:21:39,866 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/output.log
+2024-09-29 15:21:40,291 DEBUG   SenderThread:20430 [sender.py:send():391] send: telemetry
+2024-09-29 15:21:40,291 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:40,650 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:40,652 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:40,652 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:40,652 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:40,866 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_created():271] file/dir created: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:21:41,086 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:41,089 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:41,089 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:41,090 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:41,091 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 15:21:41,412 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:41,413 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:41,413 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:41,414 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:41,867 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:21:41,871 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:41,872 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:41,872 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:41,879 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:42,382 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:42,383 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:42,383 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:42,384 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:42,711 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:42,712 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:42,712 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:42,713 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:42,867 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:21:43,107 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:43,107 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:43,107 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:43,108 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:43,414 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:43,415 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:43,415 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:43,415 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:43,762 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:43,763 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:43,763 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:43,764 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:43,868 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:21:44,111 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:44,112 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:44,113 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:44,113 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:44,469 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:44,469 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:44,469 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:44,470 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:44,821 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:44,822 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:44,822 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:44,823 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:44,868 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:21:45,150 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:45,150 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:45,150 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:45,151 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:45,516 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:45,517 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:45,517 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:45,517 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:45,818 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:45,818 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:45,818 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:45,820 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:45,868 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:21:46,162 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:46,163 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:46,163 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:46,168 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:46,169 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 15:21:46,626 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:46,628 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:46,628 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:46,629 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:46,869 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:21:47,061 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:47,062 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:47,062 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:47,062 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:47,415 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:47,416 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:47,416 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:47,416 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:47,452 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 15:21:47,716 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:47,717 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:47,717 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:47,717 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:47,869 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:21:48,033 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:48,034 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:48,034 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:48,034 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:48,408 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:48,408 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:48,408 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:48,409 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:48,752 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:48,753 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:48,753 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:48,754 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:48,870 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:21:49,151 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:49,152 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:49,152 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:49,152 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:49,506 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:49,507 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:49,507 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:49,508 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:49,846 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:49,847 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:49,847 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:49,848 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:49,870 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:21:50,141 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:50,142 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:50,142 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:50,142 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:50,548 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:50,549 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:50,549 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:50,550 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:50,870 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:21:50,916 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:50,917 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:50,917 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:50,917 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:51,196 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:51,197 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:51,197 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:51,198 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:51,198 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 15:21:51,471 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:51,472 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:51,472 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:51,472 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:51,753 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:51,754 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:51,754 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:51,755 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:51,871 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:21:52,158 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:52,159 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:52,159 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:52,159 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:52,451 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 15:21:52,451 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 15:21:52,575 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:52,679 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:52,679 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:52,682 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:52,789 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:52,790 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:52,790 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:52,790 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:52,871 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:21:53,139 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:53,139 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:53,140 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:53,140 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:53,340 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:53,340 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:53,341 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:53,341 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:53,793 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:53,794 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:53,795 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:53,795 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:53,871 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:21:54,211 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:54,211 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:54,212 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:54,212 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:54,651 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:54,652 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:54,653 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:54,653 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:54,872 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:21:55,011 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:55,012 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:55,012 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:55,012 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:55,335 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:55,336 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:55,336 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:55,336 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:55,748 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:55,749 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:55,749 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:55,750 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:55,872 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:21:56,218 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:56,219 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:56,219 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:56,220 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:56,220 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 15:21:56,569 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:56,570 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:56,570 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:56,570 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:56,872 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:21:56,937 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:56,938 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:56,938 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:56,938 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:57,142 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:57,143 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:57,143 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:57,143 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:57,451 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 15:21:57,514 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:57,515 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:57,515 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:57,515 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:57,809 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:57,810 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:57,810 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:57,810 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:57,873 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:21:58,132 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:58,133 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:58,133 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:58,134 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:58,463 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:58,464 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:58,464 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:58,464 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:58,706 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:58,708 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:58,708 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:58,708 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:58,873 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:21:59,077 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:59,078 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:59,078 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:59,079 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:59,423 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:59,424 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:59,424 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:59,425 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:59,808 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:21:59,809 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:21:59,809 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:21:59,810 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:21:59,874 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:22:00,112 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:00,113 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:00,113 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:00,114 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:00,513 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:00,513 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:00,513 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:00,514 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:00,874 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:22:00,901 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:00,901 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:00,902 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:00,902 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:01,274 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:01,275 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:01,280 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 15:22:01,569 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:01,875 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:22:01,968 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:01,970 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:01,971 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:01,971 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:01,972 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:01,972 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:01,972 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:01,972 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:01,972 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:02,314 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:02,314 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:02,315 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:02,315 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:02,656 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:02,657 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:02,657 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:02,657 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:02,875 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/config.yaml
+2024-09-29 15:22:02,876 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:22:02,955 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:02,955 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:02,955 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:02,956 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:03,252 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:03,252 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:03,252 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:03,660 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:03,749 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:03,749 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:03,749 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:03,766 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:03,875 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:22:03,959 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:03,959 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:03,959 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:03,960 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:04,259 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:04,259 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:04,260 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:04,260 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:04,567 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:04,567 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:04,568 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:04,568 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:04,876 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:22:04,933 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:04,934 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:04,934 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:04,934 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:05,297 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:05,298 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:05,298 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:05,299 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:05,640 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:05,641 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:05,641 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:05,641 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:05,876 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:22:05,953 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:05,954 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:05,954 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:05,954 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:06,251 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:06,252 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:06,252 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:06,252 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:06,551 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:06,552 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:06,552 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:06,552 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:06,850 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:06,851 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:06,851 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:06,851 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:06,877 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:22:07,151 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:07,152 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:07,152 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:07,152 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 15:22:07,153 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:07,451 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 15:22:07,452 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 15:22:07,455 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 15:22:07,541 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:07,639 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:07,639 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:07,640 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:07,831 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:07,832 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:07,832 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:07,832 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:07,877 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:22:08,135 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:08,136 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:08,136 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:08,136 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:08,435 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:08,436 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:08,436 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:08,436 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:08,727 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:08,728 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:08,728 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:08,728 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:08,878 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:22:09,092 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:09,093 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:09,093 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:09,093 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:09,419 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:09,420 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:09,420 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:09,420 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:09,836 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:09,837 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:09,837 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:09,837 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:09,878 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:22:10,310 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:10,311 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:10,311 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:10,311 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:10,535 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:10,536 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:10,536 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:10,536 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:10,879 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:22:10,912 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:10,913 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:10,913 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:10,913 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:11,144 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:11,145 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:11,145 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:11,146 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:11,610 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:11,610 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:11,611 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:11,611 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:11,879 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:22:12,024 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:12,025 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:12,025 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:12,026 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:12,452 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 15:22:12,454 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:12,455 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:12,455 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:12,455 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:12,860 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:12,861 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:12,861 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:12,861 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:12,879 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:22:13,308 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:13,309 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:13,309 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:13,309 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:13,697 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:13,698 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:13,698 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:13,699 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:13,880 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:22:14,143 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:14,143 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:14,144 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:14,144 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:14,511 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:14,513 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:14,513 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:14,513 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:14,880 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:22:14,890 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:14,891 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:14,891 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:14,891 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:15,237 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:15,237 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:15,237 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:15,238 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:15,594 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:15,595 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:15,595 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:15,595 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:15,880 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:22:15,937 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:15,938 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:15,938 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:15,938 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:16,332 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:16,332 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:16,332 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:16,333 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:16,604 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:16,604 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:16,605 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:16,605 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:16,881 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:22:17,097 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:17,098 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:17,099 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:17,099 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:17,452 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 15:22:17,453 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 15:22:17,508 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:17,508 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:17,508 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:17,509 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:17,881 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:22:17,934 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:17,935 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:17,935 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:17,936 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:18,297 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:18,298 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:18,298 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:18,298 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:18,706 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:18,706 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:18,706 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:18,707 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:18,882 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:22:19,022 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:19,023 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:19,024 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:19,024 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:19,415 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:19,416 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:19,416 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:19,416 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:19,751 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:19,752 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:19,752 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:19,752 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:19,882 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:22:20,134 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:20,134 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:20,134 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:20,135 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:20,353 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:20,354 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:20,354 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:20,355 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:20,711 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:20,712 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:20,712 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:20,713 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:20,882 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:22:21,064 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:21,065 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:21,066 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:21,066 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:21,365 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:21,365 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:21,366 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:21,366 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:21,666 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:21,666 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:21,666 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:21,667 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:21,883 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:22:21,967 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:21,967 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:21,968 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:21,968 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:22,344 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:22,344 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:22,345 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:22,345 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:22,451 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 15:22:22,451 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 15:22:22,703 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:22,733 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:22,733 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:22,734 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:22,735 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 15:22:22,883 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:22:23,115 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:23,116 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:23,116 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:23,116 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:23,518 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:23,519 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:23,519 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:23,520 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:23,883 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:22:23,913 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:23,914 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:23,914 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:23,914 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:24,229 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:24,230 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:24,230 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:24,230 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:24,533 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:24,534 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:24,534 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:24,534 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:24,840 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:24,840 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:24,841 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:24,841 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:24,884 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:22:25,166 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:25,167 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:25,167 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:25,167 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:25,515 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:25,517 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:25,517 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:25,518 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:25,815 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:25,815 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:25,815 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:25,816 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:25,884 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:22:26,261 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:26,262 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:26,263 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:26,263 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:26,684 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:26,685 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:26,685 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:26,686 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:26,884 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:22:26,989 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:26,989 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:26,990 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:26,990 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:27,296 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:27,297 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:27,297 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:27,297 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:27,452 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 15:22:27,736 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:27,736 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:27,737 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:27,737 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:27,737 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 15:22:27,885 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:22:28,085 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:28,086 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:28,086 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:28,086 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:28,496 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:28,497 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:28,497 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:28,497 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:28,887 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:22:28,893 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:28,893 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:28,894 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:28,894 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:29,245 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:29,245 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:29,246 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:29,246 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:29,521 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:29,522 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:29,522 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:29,522 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:29,888 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/output.log
+2024-09-29 15:22:29,888 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:22:32,380 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:32,381 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:32,381 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:32,381 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:32,692 DEBUG   SystemMonitor:20430 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-09-29 15:22:32,693 DEBUG   SenderThread:20430 [sender.py:send():391] send: stats
+2024-09-29 15:22:32,740 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:32,740 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:32,740 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:32,741 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:32,741 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 15:22:32,889 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:22:32,939 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:32,940 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:32,940 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:32,941 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:33,362 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:33,362 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:33,363 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:33,363 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:33,717 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:33,718 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:33,718 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:33,718 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:33,889 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:22:33,995 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:33,995 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:33,996 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:33,996 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:34,366 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:34,367 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:34,367 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:34,367 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:34,777 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:34,778 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:34,778 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:34,779 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:34,889 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:22:35,246 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-29 15:22:35,247 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:35,247 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:35,247 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:35,890 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/output.log
+2024-09-29 15:22:35,890 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:22:37,456 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 15:22:37,457 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 15:22:37,459 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 15:22:37,807 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 15:22:40,070 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: pause
+2024-09-29 15:22:40,070 INFO    HandlerThread:20430 [handler.py:handle_request_pause():728] stopping system metrics thread
+2024-09-29 15:22:40,070 INFO    HandlerThread:20430 [system_monitor.py:finish():203] Stopping system monitor
+2024-09-29 15:22:40,070 DEBUG   SystemMonitor:20430 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-09-29 15:22:40,070 DEBUG   SystemMonitor:20430 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-09-29 15:22:40,075 INFO    HandlerThread:20430 [interfaces.py:finish():200] Joined cpu monitor
+2024-09-29 15:22:40,075 INFO    HandlerThread:20430 [interfaces.py:finish():200] Joined disk monitor
+2024-09-29 15:22:40,076 INFO    HandlerThread:20430 [interfaces.py:finish():200] Joined memory monitor
+2024-09-29 15:22:40,076 INFO    HandlerThread:20430 [interfaces.py:finish():200] Joined network monitor
+2024-09-29 15:22:40,079 DEBUG   SenderThread:20430 [sender.py:send():391] send: stats
+2024-09-29 15:22:43,446 DEBUG   SenderThread:20430 [sender.py:send():391] send: exit
+2024-09-29 15:22:43,448 INFO    SenderThread:20430 [sender.py:send_exit():598] handling exit code: 0
+2024-09-29 15:22:43,448 INFO    SenderThread:20430 [sender.py:send_exit():600] handling runtime: 67
+2024-09-29 15:22:43,448 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:43,449 INFO    SenderThread:20430 [sender.py:send_exit():606] send defer
+2024-09-29 15:22:43,449 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: defer
+2024-09-29 15:22:43,449 INFO    HandlerThread:20430 [handler.py:handle_request_defer():184] handle defer: 0
+2024-09-29 15:22:43,449 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 15:22:43,449 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: defer
+2024-09-29 15:22:43,449 INFO    SenderThread:20430 [sender.py:send_request_defer():622] handle sender defer: 0
+2024-09-29 15:22:43,449 INFO    SenderThread:20430 [sender.py:transition_state():626] send defer: 1
+2024-09-29 15:22:43,449 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: defer
+2024-09-29 15:22:43,449 INFO    HandlerThread:20430 [handler.py:handle_request_defer():184] handle defer: 1
+2024-09-29 15:22:43,450 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: defer
+2024-09-29 15:22:43,450 INFO    SenderThread:20430 [sender.py:send_request_defer():622] handle sender defer: 1
+2024-09-29 15:22:43,450 INFO    SenderThread:20430 [sender.py:transition_state():626] send defer: 2
+2024-09-29 15:22:43,450 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: defer
+2024-09-29 15:22:43,450 INFO    HandlerThread:20430 [handler.py:handle_request_defer():184] handle defer: 2
+2024-09-29 15:22:43,450 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: defer
+2024-09-29 15:22:43,450 INFO    SenderThread:20430 [sender.py:send_request_defer():622] handle sender defer: 2
+2024-09-29 15:22:43,450 INFO    SenderThread:20430 [sender.py:transition_state():626] send defer: 3
+2024-09-29 15:22:43,450 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: defer
+2024-09-29 15:22:43,450 INFO    HandlerThread:20430 [handler.py:handle_request_defer():184] handle defer: 3
+2024-09-29 15:22:43,451 DEBUG   SenderThread:20430 [sender.py:send():391] send: history
+2024-09-29 15:22:43,451 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: summary_record
+2024-09-29 15:22:43,451 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:43,451 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: defer
+2024-09-29 15:22:43,451 INFO    SenderThread:20430 [sender.py:send_request_defer():622] handle sender defer: 3
+2024-09-29 15:22:43,452 INFO    SenderThread:20430 [sender.py:transition_state():626] send defer: 4
+2024-09-29 15:22:43,452 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: defer
+2024-09-29 15:22:43,452 INFO    HandlerThread:20430 [handler.py:handle_request_defer():184] handle defer: 4
+2024-09-29 15:22:43,452 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: defer
+2024-09-29 15:22:43,452 INFO    SenderThread:20430 [sender.py:send_request_defer():622] handle sender defer: 4
+2024-09-29 15:22:43,452 INFO    SenderThread:20430 [sender.py:transition_state():626] send defer: 5
+2024-09-29 15:22:43,452 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: defer
+2024-09-29 15:22:43,452 INFO    HandlerThread:20430 [handler.py:handle_request_defer():184] handle defer: 5
+2024-09-29 15:22:43,452 DEBUG   SenderThread:20430 [sender.py:send():391] send: summary
+2024-09-29 15:22:43,453 INFO    SenderThread:20430 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 15:22:43,453 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: defer
+2024-09-29 15:22:43,453 INFO    SenderThread:20430 [sender.py:send_request_defer():622] handle sender defer: 5
+2024-09-29 15:22:43,453 INFO    SenderThread:20430 [sender.py:transition_state():626] send defer: 6
+2024-09-29 15:22:43,453 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: defer
+2024-09-29 15:22:43,453 INFO    HandlerThread:20430 [handler.py:handle_request_defer():184] handle defer: 6
+2024-09-29 15:22:43,453 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: defer
+2024-09-29 15:22:43,453 INFO    SenderThread:20430 [sender.py:send_request_defer():622] handle sender defer: 6
+2024-09-29 15:22:43,454 INFO    SenderThread:20430 [sender.py:transition_state():626] send defer: 7
+2024-09-29 15:22:43,454 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 15:22:43,454 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: defer
+2024-09-29 15:22:43,454 INFO    HandlerThread:20430 [handler.py:handle_request_defer():184] handle defer: 7
+2024-09-29 15:22:43,454 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: defer
+2024-09-29 15:22:43,454 INFO    SenderThread:20430 [sender.py:send_request_defer():622] handle sender defer: 7
+2024-09-29 15:22:43,864 INFO    SenderThread:20430 [sender.py:transition_state():626] send defer: 8
+2024-09-29 15:22:43,864 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: defer
+2024-09-29 15:22:43,864 INFO    HandlerThread:20430 [handler.py:handle_request_defer():184] handle defer: 8
+2024-09-29 15:22:43,864 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: defer
+2024-09-29 15:22:43,864 INFO    SenderThread:20430 [sender.py:send_request_defer():622] handle sender defer: 8
+2024-09-29 15:22:43,864 INFO    SenderThread:20430 [job_builder.py:build():443] Attempting to build job artifact
+2024-09-29 15:22:43,865 INFO    SenderThread:20430 [job_builder.py:_get_source_type():572] is repo sourced job
+2024-09-29 15:22:43,865 INFO    SenderThread:20430 [job_builder.py:_get_program_relpath():590] run is notebook based run
+2024-09-29 15:22:43,870 INFO    SenderThread:20430 [job_builder.py:build():548] adding wandb-job metadata file
+2024-09-29 15:22:43,897 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/output.log
+2024-09-29 15:22:43,898 INFO    Thread-36 :20430 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:22:43,922 INFO    SenderThread:20430 [sender.py:transition_state():626] send defer: 9
+2024-09-29 15:22:43,922 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: defer
+2024-09-29 15:22:43,922 INFO    HandlerThread:20430 [handler.py:handle_request_defer():184] handle defer: 9
+2024-09-29 15:22:43,922 DEBUG   SenderThread:20430 [sender.py:send():391] send: artifact
+2024-09-29 15:22:44,446 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-29 15:22:44,847 INFO    SenderThread:20430 [sender.py:send_artifact():1549] sent artifact job-git_github.com_e1vanov_precondnn.git_main.ipynb - {'id': 'QXJ0aWZhY3Q6MTI1MzEzODgzNg==', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQ2MzgwMTQ1Nw==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTI1MzE1Mzc5MA==', 'versionIndex': 1}}}
+2024-09-29 15:22:44,847 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: defer
+2024-09-29 15:22:44,847 INFO    SenderThread:20430 [sender.py:send_request_defer():622] handle sender defer: 9
+2024-09-29 15:22:44,847 INFO    SenderThread:20430 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-09-29 15:22:44,898 INFO    SenderThread:20430 [dir_watcher.py:finish():388] scan: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files
+2024-09-29 15:22:44,899 INFO    SenderThread:20430 [dir_watcher.py:finish():402] scan save: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/output.log output.log
+2024-09-29 15:22:44,899 INFO    SenderThread:20430 [dir_watcher.py:finish():402] scan save: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json wandb-summary.json
+2024-09-29 15:22:44,899 INFO    SenderThread:20430 [dir_watcher.py:finish():402] scan save: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/config.yaml config.yaml
+2024-09-29 15:22:44,903 INFO    SenderThread:20430 [dir_watcher.py:finish():402] scan save: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/requirements.txt requirements.txt
+2024-09-29 15:22:44,904 INFO    SenderThread:20430 [dir_watcher.py:finish():402] scan save: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/conda-environment.yaml conda-environment.yaml
+2024-09-29 15:22:44,906 INFO    SenderThread:20430 [dir_watcher.py:finish():402] scan save: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-metadata.json wandb-metadata.json
+2024-09-29 15:22:44,906 INFO    SenderThread:20430 [sender.py:transition_state():626] send defer: 10
+2024-09-29 15:22:44,908 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: poll_exit
+2024-09-29 15:22:44,910 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: defer
+2024-09-29 15:22:44,910 INFO    HandlerThread:20430 [handler.py:handle_request_defer():184] handle defer: 10
+2024-09-29 15:22:44,910 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: defer
+2024-09-29 15:22:44,910 INFO    SenderThread:20430 [sender.py:send_request_defer():622] handle sender defer: 10
+2024-09-29 15:22:44,910 INFO    SenderThread:20430 [file_pusher.py:finish():169] shutting down file pusher
+2024-09-29 15:22:45,419 INFO    wandb-upload_1:20430 [upload_job.py:push():130] Uploaded file /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/wandb-summary.json
+2024-09-29 15:22:45,448 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-29 15:22:45,448 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: poll_exit
+2024-09-29 15:22:45,557 INFO    wandb-upload_0:20430 [upload_job.py:push():130] Uploaded file /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/output.log
+2024-09-29 15:22:45,708 INFO    wandb-upload_2:20430 [upload_job.py:push():130] Uploaded file /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/config.yaml
+2024-09-29 15:22:45,820 INFO    wandb-upload_3:20430 [upload_job.py:push():130] Uploaded file /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/requirements.txt
+2024-09-29 15:22:45,839 INFO    wandb-upload_4:20430 [upload_job.py:push():130] Uploaded file /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/files/conda-environment.yaml
+2024-09-29 15:22:46,040 INFO    Thread-35 (_thread_body):20430 [sender.py:transition_state():626] send defer: 11
+2024-09-29 15:22:46,042 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: defer
+2024-09-29 15:22:46,042 INFO    HandlerThread:20430 [handler.py:handle_request_defer():184] handle defer: 11
+2024-09-29 15:22:46,043 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: defer
+2024-09-29 15:22:46,043 INFO    SenderThread:20430 [sender.py:send_request_defer():622] handle sender defer: 11
+2024-09-29 15:22:46,043 INFO    SenderThread:20430 [file_pusher.py:join():175] waiting for file pusher
+2024-09-29 15:22:46,043 INFO    SenderThread:20430 [sender.py:transition_state():626] send defer: 12
+2024-09-29 15:22:46,043 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: defer
+2024-09-29 15:22:46,043 INFO    HandlerThread:20430 [handler.py:handle_request_defer():184] handle defer: 12
+2024-09-29 15:22:46,043 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: defer
+2024-09-29 15:22:46,043 INFO    SenderThread:20430 [sender.py:send_request_defer():622] handle sender defer: 12
+2024-09-29 15:22:46,044 INFO    SenderThread:20430 [file_stream.py:finish():601] file stream finish called
+2024-09-29 15:22:46,449 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-29 15:22:46,828 INFO    SenderThread:20430 [file_stream.py:finish():605] file stream finish is done
+2024-09-29 15:22:46,828 INFO    SenderThread:20430 [sender.py:transition_state():626] send defer: 13
+2024-09-29 15:22:46,828 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: poll_exit
+2024-09-29 15:22:46,829 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: defer
+2024-09-29 15:22:46,829 INFO    HandlerThread:20430 [handler.py:handle_request_defer():184] handle defer: 13
+2024-09-29 15:22:46,829 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: defer
+2024-09-29 15:22:46,829 INFO    SenderThread:20430 [sender.py:send_request_defer():622] handle sender defer: 13
+2024-09-29 15:22:46,829 INFO    SenderThread:20430 [sender.py:transition_state():626] send defer: 14
+2024-09-29 15:22:46,829 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: defer
+2024-09-29 15:22:46,830 INFO    HandlerThread:20430 [handler.py:handle_request_defer():184] handle defer: 14
+2024-09-29 15:22:46,830 DEBUG   SenderThread:20430 [sender.py:send():391] send: final
+2024-09-29 15:22:46,830 DEBUG   SenderThread:20430 [sender.py:send():391] send: footer
+2024-09-29 15:22:46,830 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: defer
+2024-09-29 15:22:46,830 INFO    SenderThread:20430 [sender.py:send_request_defer():622] handle sender defer: 14
+2024-09-29 15:22:46,831 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-29 15:22:46,831 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: poll_exit
+2024-09-29 15:22:46,831 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: server_info
+2024-09-29 15:22:46,832 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: server_info
+2024-09-29 15:22:46,834 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-29 15:22:46,834 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: get_summary
+2024-09-29 15:22:46,835 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: sampled_history
+2024-09-29 15:22:46,835 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 15:22:47,000 DEBUG   SenderThread:20430 [sender.py:send_request():418] send_request: poll_exit
+2024-09-29 15:22:47,001 INFO    MainThread:20430 [wandb_run.py:_footer_history_summary_info():4078] rendering history
+2024-09-29 15:22:47,001 INFO    MainThread:20430 [wandb_run.py:_footer_history_summary_info():4110] rendering summary
+2024-09-29 15:22:47,002 INFO    MainThread:20430 [wandb_run.py:_footer_sync_info():4037] logging synced files
+2024-09-29 15:22:47,002 DEBUG   HandlerThread:20430 [handler.py:handle_request():158] handle_request: shutdown
+2024-09-29 15:22:47,002 INFO    HandlerThread:20430 [handler.py:finish():884] shutting down handler
+2024-09-29 15:22:47,834 INFO    WriterThread:20430 [datastore.py:close():296] close: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_152130-22dodx75/run-22dodx75.wandb
+2024-09-29 15:22:48,001 INFO    SenderThread:20430 [sender.py:finish():1631] shutting down sender
+2024-09-29 15:22:48,001 INFO    SenderThread:20430 [file_pusher.py:finish():169] shutting down file pusher
+2024-09-29 15:22:48,001 INFO    SenderThread:20430 [file_pusher.py:join():175] waiting for file pusher

@@ -1,0 +1,59 @@
+{
+    "os": "Linux-5.15.0-88-generic-x86_64-with-glibc2.35",
+    "python": "3.11.5",
+    "heartbeatAt": "2024-09-28T13:54:28.206735",
+    "startedAt": "2024-09-28T13:54:26.725058",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "main.ipynb",
+    "codePathLocal": "main.ipynb",
+    "root": "/home/egor/desktop/tmp/precondnn",
+    "git": {
+        "remote": "git@github.com:e1vanov/precondnn.git",
+        "commit": "b80f5b6636af1f2441be2fb5337e774b15d2a187"
+    },
+    "email": "s02210401@gse.cs.msu.ru",
+    "host": "egor-MacBookAir",
+    "username": "egor",
+    "executable": "/home/egor/miniconda3/bin/python",
+    "cpu_count": 2,
+    "cpu_count_logical": 4,
+    "cpu_freq": {
+        "current": 2.2415,
+        "min": 500.0,
+        "max": 2900.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1.4,
+            "min": 500.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2.9,
+            "min": 500.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2.9,
+            "min": 500.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1.766,
+            "min": 500.0,
+            "max": 2900.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 457.2810821533203,
+            "used": 57.541561126708984
+        }
+    },
+    "memory": {
+        "total": 7.656715393066406
+    }
+}

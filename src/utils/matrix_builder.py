@@ -24,8 +24,8 @@ def make_symm_toeplitz(tensor,
 
     return make_circulant(extended_tensor, dim)[...,:length,:length]
 
-def make_eye_sub_tc_inv(t, c_inv, 
-                        t_mode='symm'):
+def make_tc_inv(t, c_inv, 
+                t_mode='symm'):
 
     if t_mode != 'symm':
         raise NotImplementedError('Not implemented for non-symmetric toeplitz matrix')
@@ -36,4 +36,9 @@ def make_eye_sub_tc_inv(t, c_inv,
     C_inv = torch.permute(make_circulant(c_inv, dim=1), 
                           (0, 2, 1))
 
-    return torch.eye(d).repeat(n, 1, 1) - torch.matmul(T, C_inv)
+    return torch.matmul(T, C_inv)
+
+def make_eye_sub_tc_inv(t, c_inv, 
+                        t_mode='symm'):
+
+    return torch.eye(d).repeat(n, 1, 1) - make_tc_inv(t, c_inv, t_mode)

@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 
 def draw_spectrum(t, c_inv, 
                   h=3, w=3, 
+                  mode='eye_min_t_c_inv',
                   path='./img.svg'):
 
     assert t.shape[0] == h * w
@@ -21,7 +22,10 @@ def draw_spectrum(t, c_inv,
             T = sp.linalg.toeplitz(t[ind])
             C_inv = sp.linalg.circulant(c_inv[ind])
 
-            A = np.eye(t.shape[1]) - T @ C_inv
+            if mode == 'eye_min_t_c_inv':
+                A = np.eye(t.shape[1]) - T @ C_inv
+            elif mode == 't_c_inv':
+                A = T @ C_inv
 
             lambdas = np.linalg.eigvals(A)
 

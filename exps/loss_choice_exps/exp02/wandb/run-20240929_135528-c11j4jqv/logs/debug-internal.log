@@ -1,0 +1,736 @@
+2024-09-29 13:55:28,862 INFO    StreamThr :18440 [internal.py:wandb_internal():85] W&B internal server running at pid: 18440, started at: 2024-09-29 13:55:28.861542
+2024-09-29 13:55:28,864 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status
+2024-09-29 13:55:28,928 INFO    WriterThread:18440 [datastore.py:open_for_write():87] open: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_135528-c11j4jqv/run-c11j4jqv.wandb
+2024-09-29 13:55:28,928 DEBUG   SenderThread:18440 [sender.py:send():391] send: header
+2024-09-29 13:55:28,957 DEBUG   SenderThread:18440 [sender.py:send():391] send: run
+2024-09-29 13:55:29,800 INFO    SenderThread:18440 [dir_watcher.py:__init__():211] watching files in: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_135528-c11j4jqv/files
+2024-09-29 13:55:29,800 INFO    SenderThread:18440 [sender.py:_start_run_threads():1200] run started: c11j4jqv with start time 1727607328.878561
+2024-09-29 13:55:29,808 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: run_start
+2024-09-29 13:55:29,810 DEBUG   HandlerThread:18440 [system_info.py:__init__():26] System info init
+2024-09-29 13:55:29,810 DEBUG   HandlerThread:18440 [system_info.py:__init__():41] System info init done
+2024-09-29 13:55:29,810 INFO    HandlerThread:18440 [system_monitor.py:start():194] Starting system monitor
+2024-09-29 13:55:29,810 INFO    SystemMonitor:18440 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-09-29 13:55:29,810 INFO    HandlerThread:18440 [system_monitor.py:probe():214] Collecting system info
+2024-09-29 13:55:29,811 INFO    SystemMonitor:18440 [interfaces.py:start():188] Started cpu monitoring
+2024-09-29 13:55:29,811 INFO    SystemMonitor:18440 [interfaces.py:start():188] Started disk monitoring
+2024-09-29 13:55:29,812 INFO    SystemMonitor:18440 [interfaces.py:start():188] Started memory monitoring
+2024-09-29 13:55:29,813 INFO    SystemMonitor:18440 [interfaces.py:start():188] Started network monitoring
+2024-09-29 13:55:29,838 DEBUG   HandlerThread:18440 [system_info.py:probe():152] Probing system
+2024-09-29 13:55:29,840 DEBUG   HandlerThread:18440 [system_info.py:_probe_git():137] Probing git
+2024-09-29 13:55:29,846 DEBUG   HandlerThread:18440 [system_info.py:_probe_git():145] Probing git done
+2024-09-29 13:55:29,846 DEBUG   HandlerThread:18440 [system_info.py:probe():200] Probing system done
+2024-09-29 13:55:29,846 DEBUG   HandlerThread:18440 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-88-generic-x86_64-with-glibc2.35', 'python': '3.11.5', 'heartbeatAt': '2024-09-29T10:55:29.838134', 'startedAt': '2024-09-29T10:55:28.855700', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'main.ipynb', 'codePathLocal': 'main.ipynb', 'root': '/home/egor/desktop/tmp/precondnn', 'git': {'remote': 'git@github.com:e1vanov/precondnn.git', 'commit': 'b80f5b6636af1f2441be2fb5337e774b15d2a187'}, 'email': 's02210401@gse.cs.msu.ru', 'host': 'egor-MacBookAir', 'username': 'egor', 'executable': '/home/egor/miniconda3/bin/python', 'cpu_count': 2, 'cpu_count_logical': 4, 'cpu_freq': {'current': 2.57275, 'min': 500.0, 'max': 2900.0}, 'cpu_freq_per_core': [{'current': 2.7, 'min': 500.0, 'max': 2900.0}, {'current': 2.9, 'min': 500.0, 'max': 2900.0}, {'current': 2.9, 'min': 500.0, 'max': 2900.0}, {'current': 1.791, 'min': 500.0, 'max': 2900.0}], 'disk': {'/': {'total': 457.2810821533203, 'used': 57.5605583190918}}, 'memory': {'total': 7.656715393066406}}
+2024-09-29 13:55:29,846 INFO    HandlerThread:18440 [system_monitor.py:probe():224] Finished collecting system info
+2024-09-29 13:55:29,846 INFO    HandlerThread:18440 [system_monitor.py:probe():227] Publishing system info
+2024-09-29 13:55:29,846 DEBUG   HandlerThread:18440 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-09-29 13:55:30,803 INFO    Thread-12 :18440 [dir_watcher.py:_on_file_created():271] file/dir created: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_135528-c11j4jqv/files/conda-environment.yaml
+2024-09-29 13:55:36,128 DEBUG   HandlerThread:18440 [system_info.py:_save_conda():224] Saving conda packages done
+2024-09-29 13:55:36,129 INFO    HandlerThread:18440 [system_monitor.py:probe():229] Finished publishing system info
+2024-09-29 13:55:36,148 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 13:55:36,148 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: keepalive
+2024-09-29 13:55:36,149 DEBUG   SenderThread:18440 [sender.py:send():391] send: files
+2024-09-29 13:55:36,149 INFO    SenderThread:18440 [sender.py:_save_file():1466] saving file wandb-metadata.json with policy now
+2024-09-29 13:55:36,345 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: python_packages
+2024-09-29 13:55:36,345 DEBUG   SenderThread:18440 [sender.py:send_request():418] send_request: python_packages
+2024-09-29 13:55:36,347 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 13:55:36,347 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 13:55:36,348 DEBUG   SenderThread:18440 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 13:55:36,805 INFO    Thread-12 :18440 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_135528-c11j4jqv/files/conda-environment.yaml
+2024-09-29 13:55:36,805 INFO    Thread-12 :18440 [dir_watcher.py:_on_file_created():271] file/dir created: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_135528-c11j4jqv/files/requirements.txt
+2024-09-29 13:55:36,805 INFO    Thread-12 :18440 [dir_watcher.py:_on_file_created():271] file/dir created: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_135528-c11j4jqv/files/wandb-metadata.json
+2024-09-29 13:55:37,606 DEBUG   SenderThread:18440 [sender.py:send():391] send: telemetry
+2024-09-29 13:55:37,805 INFO    Thread-12 :18440 [dir_watcher.py:_on_file_created():271] file/dir created: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_135528-c11j4jqv/files/output.log
+2024-09-29 13:55:38,126 INFO    wandb-upload_0:18440 [upload_job.py:push():130] Uploaded file /tmp/tmp_tz9acgowandb/o1c2f4a6-wandb-metadata.json
+2024-09-29 13:55:39,806 INFO    Thread-12 :18440 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_135528-c11j4jqv/files/output.log
+2024-09-29 13:55:40,613 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 13:55:41,807 INFO    Thread-12 :18440 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_135528-c11j4jqv/files/output.log
+2024-09-29 13:55:43,820 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: pause
+2024-09-29 13:55:43,820 INFO    HandlerThread:18440 [handler.py:handle_request_pause():728] stopping system metrics thread
+2024-09-29 13:55:43,820 INFO    HandlerThread:18440 [system_monitor.py:finish():203] Stopping system monitor
+2024-09-29 13:55:43,821 DEBUG   SystemMonitor:18440 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-09-29 13:55:43,821 DEBUG   SystemMonitor:18440 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-09-29 13:55:43,821 DEBUG   SystemMonitor:18440 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-09-29 13:55:43,821 INFO    HandlerThread:18440 [interfaces.py:finish():200] Joined cpu monitor
+2024-09-29 13:55:43,822 INFO    HandlerThread:18440 [interfaces.py:finish():200] Joined disk monitor
+2024-09-29 13:55:43,822 INFO    HandlerThread:18440 [interfaces.py:finish():200] Joined memory monitor
+2024-09-29 13:55:43,822 INFO    HandlerThread:18440 [interfaces.py:finish():200] Joined network monitor
+2024-09-29 13:55:46,346 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 13:55:46,349 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 13:55:51,345 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 13:55:51,346 DEBUG   SenderThread:18440 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 13:55:51,562 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 13:55:56,346 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 13:55:57,349 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 13:56:02,352 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 13:56:02,815 INFO    Thread-12 :18440 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_135528-c11j4jqv/files/config.yaml
+2024-09-29 13:56:06,345 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 13:56:06,346 DEBUG   SenderThread:18440 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 13:56:06,387 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 13:56:07,567 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 13:56:13,350 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 13:56:16,347 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 13:56:18,350 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 13:56:21,346 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 13:56:21,346 DEBUG   SenderThread:18440 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 13:56:23,572 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 13:56:26,347 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 13:56:29,350 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 13:56:34,350 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 13:56:36,346 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 13:56:36,346 DEBUG   SenderThread:18440 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 13:56:36,387 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 13:56:39,700 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 13:56:45,352 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 13:56:46,347 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 13:56:51,346 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 13:56:51,346 DEBUG   SenderThread:18440 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 13:56:51,650 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 13:56:56,347 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 13:56:57,352 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 13:57:03,351 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 13:57:06,346 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 13:57:06,347 DEBUG   SenderThread:18440 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 13:57:06,387 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 13:57:08,601 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 13:57:14,352 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 13:57:16,348 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 13:57:19,353 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 13:57:21,346 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 13:57:21,347 DEBUG   SenderThread:18440 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 13:57:24,756 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 13:57:26,347 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 13:57:30,353 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 13:57:35,353 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 13:57:36,346 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 13:57:36,347 DEBUG   SenderThread:18440 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 13:57:36,387 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 13:57:40,540 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 13:57:46,348 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 13:57:46,352 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 13:57:51,346 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 13:57:51,347 DEBUG   SenderThread:18440 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 13:57:51,546 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 13:57:56,348 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 13:57:57,353 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 13:58:02,353 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 13:58:06,347 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 13:58:06,347 DEBUG   SenderThread:18440 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 13:58:06,387 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 13:58:07,538 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 13:58:13,354 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 13:58:16,348 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 13:58:19,353 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 13:58:21,347 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 13:58:21,348 DEBUG   SenderThread:18440 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 13:58:24,731 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 13:58:26,349 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 13:58:30,355 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 13:58:36,347 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 13:58:36,347 DEBUG   SenderThread:18440 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 13:58:36,391 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 13:58:36,557 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 13:58:42,354 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 13:58:46,349 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 13:58:47,354 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 13:58:51,347 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-29 13:58:51,348 DEBUG   SenderThread:18440 [sender.py:send_request():418] send_request: stop_status
+2024-09-29 13:58:52,550 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 13:58:56,349 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-29 13:58:58,355 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 13:59:04,039 DEBUG   SenderThread:18440 [sender.py:send():391] send: exit
+2024-09-29 13:59:04,039 INFO    SenderThread:18440 [sender.py:send_exit():598] handling exit code: 0
+2024-09-29 13:59:04,039 INFO    SenderThread:18440 [sender.py:send_exit():600] handling runtime: 14
+2024-09-29 13:59:04,040 INFO    SenderThread:18440 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 13:59:04,040 INFO    SenderThread:18440 [sender.py:send_exit():606] send defer
+2024-09-29 13:59:04,041 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: defer
+2024-09-29 13:59:04,041 INFO    HandlerThread:18440 [handler.py:handle_request_defer():184] handle defer: 0
+2024-09-29 13:59:04,041 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 13:59:04,041 DEBUG   SenderThread:18440 [sender.py:send_request():418] send_request: defer
+2024-09-29 13:59:04,042 INFO    SenderThread:18440 [sender.py:send_request_defer():622] handle sender defer: 0
+2024-09-29 13:59:04,042 INFO    SenderThread:18440 [sender.py:transition_state():626] send defer: 1
+2024-09-29 13:59:04,042 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: defer
+2024-09-29 13:59:04,042 INFO    HandlerThread:18440 [handler.py:handle_request_defer():184] handle defer: 1
+2024-09-29 13:59:04,042 DEBUG   SenderThread:18440 [sender.py:send_request():418] send_request: defer
+2024-09-29 13:59:04,042 INFO    SenderThread:18440 [sender.py:send_request_defer():622] handle sender defer: 1
+2024-09-29 13:59:04,042 INFO    SenderThread:18440 [sender.py:transition_state():626] send defer: 2
+2024-09-29 13:59:04,042 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: defer
+2024-09-29 13:59:04,042 INFO    HandlerThread:18440 [handler.py:handle_request_defer():184] handle defer: 2
+2024-09-29 13:59:04,043 DEBUG   SenderThread:18440 [sender.py:send_request():418] send_request: defer
+2024-09-29 13:59:04,043 INFO    SenderThread:18440 [sender.py:send_request_defer():622] handle sender defer: 2
+2024-09-29 13:59:04,043 INFO    SenderThread:18440 [sender.py:transition_state():626] send defer: 3
+2024-09-29 13:59:04,043 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: defer
+2024-09-29 13:59:04,043 INFO    HandlerThread:18440 [handler.py:handle_request_defer():184] handle defer: 3
+2024-09-29 13:59:04,043 DEBUG   SenderThread:18440 [sender.py:send_request():418] send_request: defer
+2024-09-29 13:59:04,043 INFO    SenderThread:18440 [sender.py:send_request_defer():622] handle sender defer: 3
+2024-09-29 13:59:04,043 INFO    SenderThread:18440 [sender.py:transition_state():626] send defer: 4
+2024-09-29 13:59:04,043 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: defer
+2024-09-29 13:59:04,043 INFO    HandlerThread:18440 [handler.py:handle_request_defer():184] handle defer: 4
+2024-09-29 13:59:04,043 DEBUG   SenderThread:18440 [sender.py:send_request():418] send_request: defer
+2024-09-29 13:59:04,043 INFO    SenderThread:18440 [sender.py:send_request_defer():622] handle sender defer: 4
+2024-09-29 13:59:04,044 INFO    SenderThread:18440 [sender.py:transition_state():626] send defer: 5
+2024-09-29 13:59:04,044 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: defer
+2024-09-29 13:59:04,044 INFO    HandlerThread:18440 [handler.py:handle_request_defer():184] handle defer: 5
+2024-09-29 13:59:04,044 DEBUG   SenderThread:18440 [sender.py:send():391] send: summary
+2024-09-29 13:59:04,044 INFO    SenderThread:18440 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-29 13:59:04,044 DEBUG   SenderThread:18440 [sender.py:send_request():418] send_request: defer
+2024-09-29 13:59:04,045 INFO    SenderThread:18440 [sender.py:send_request_defer():622] handle sender defer: 5
+2024-09-29 13:59:04,045 INFO    SenderThread:18440 [sender.py:transition_state():626] send defer: 6
+2024-09-29 13:59:04,045 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: defer
+2024-09-29 13:59:04,045 INFO    HandlerThread:18440 [handler.py:handle_request_defer():184] handle defer: 6
+2024-09-29 13:59:04,045 DEBUG   SenderThread:18440 [sender.py:send_request():418] send_request: defer
+2024-09-29 13:59:04,045 INFO    SenderThread:18440 [sender.py:send_request_defer():622] handle sender defer: 6
+2024-09-29 13:59:04,045 INFO    SenderThread:18440 [sender.py:transition_state():626] send defer: 7
+2024-09-29 13:59:04,045 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: status_report
+2024-09-29 13:59:04,045 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: defer
+2024-09-29 13:59:04,045 INFO    HandlerThread:18440 [handler.py:handle_request_defer():184] handle defer: 7
+2024-09-29 13:59:04,045 DEBUG   SenderThread:18440 [sender.py:send_request():418] send_request: defer
+2024-09-29 13:59:04,046 INFO    SenderThread:18440 [sender.py:send_request_defer():622] handle sender defer: 7
+2024-09-29 13:59:04,226 ERROR   FileStreamThread:18440 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/cmcmsu/loss_choice_02/c11j4jqv/file_stream
+NoneType: None
+2024-09-29 13:59:04,886 INFO    Thread-12 :18440 [dir_watcher.py:_on_file_created():271] file/dir created: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_135528-c11j4jqv/files/wandb-summary.json
+2024-09-29 13:59:05,040 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-29 13:59:05,656 INFO    SenderThread:18440 [sender.py:transition_state():626] send defer: 8
+2024-09-29 13:59:05,657 DEBUG   SenderThread:18440 [sender.py:send_request():418] send_request: poll_exit
+2024-09-29 13:59:05,657 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: defer
+2024-09-29 13:59:05,657 INFO    HandlerThread:18440 [handler.py:handle_request_defer():184] handle defer: 8
+2024-09-29 13:59:05,657 DEBUG   SenderThread:18440 [sender.py:send_request():418] send_request: defer
+2024-09-29 13:59:05,657 INFO    SenderThread:18440 [sender.py:send_request_defer():622] handle sender defer: 8
+2024-09-29 13:59:05,657 INFO    SenderThread:18440 [job_builder.py:build():443] Attempting to build job artifact
+2024-09-29 13:59:05,658 INFO    SenderThread:18440 [job_builder.py:_get_source_type():572] is repo sourced job
+2024-09-29 13:59:05,658 INFO    SenderThread:18440 [job_builder.py:_get_program_relpath():590] run is notebook based run
+2024-09-29 13:59:05,683 INFO    SenderThread:18440 [job_builder.py:build():548] adding wandb-job metadata file
+2024-09-29 13:59:05,802 INFO    SenderThread:18440 [sender.py:transition_state():626] send defer: 9
+2024-09-29 13:59:05,803 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: defer
+2024-09-29 13:59:05,803 INFO    HandlerThread:18440 [handler.py:handle_request_defer():184] handle defer: 9
+2024-09-29 13:59:05,803 DEBUG   SenderThread:18440 [sender.py:send():391] send: artifact
+2024-09-29 13:59:05,887 INFO    Thread-12 :18440 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_135528-c11j4jqv/files/output.log
+2024-09-29 13:59:06,042 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-29 13:59:06,544 ERROR   SenderThread:18440 [internal_api.py:execute():349] 404 response executing GraphQL.
+2024-09-29 13:59:06,544 ERROR   SenderThread:18440 [internal_api.py:execute():350] {"errors":[{"message":"failed to find run loss_choice_02/c11j4jqv","path":["createArtifactManifest"]}],"data":{"createArtifactManifest":null}}
+2024-09-29 13:59:06,544 ERROR   SenderThread:18440 [sender.py:send_artifact():1551] send_artifact: failed for artifact "job/job-git_github.com_e1vanov_precondnn.git_main.ipynb": [Errno 32] Broken pipe
+2024-09-29 13:59:06,544 DEBUG   SenderThread:18440 [sender.py:send_request():418] send_request: defer
+2024-09-29 13:59:06,544 INFO    SenderThread:18440 [sender.py:send_request_defer():622] handle sender defer: 9
+2024-09-29 13:59:06,544 INFO    SenderThread:18440 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-09-29 13:59:06,888 INFO    SenderThread:18440 [dir_watcher.py:finish():388] scan: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_135528-c11j4jqv/files
+2024-09-29 13:59:06,888 INFO    SenderThread:18440 [dir_watcher.py:finish():402] scan save: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_135528-c11j4jqv/files/output.log output.log
+2024-09-29 13:59:06,888 INFO    SenderThread:18440 [dir_watcher.py:finish():402] scan save: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_135528-c11j4jqv/files/wandb-summary.json wandb-summary.json
+2024-09-29 13:59:06,891 INFO    SenderThread:18440 [dir_watcher.py:finish():402] scan save: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_135528-c11j4jqv/files/config.yaml config.yaml
+2024-09-29 13:59:06,891 INFO    SenderThread:18440 [dir_watcher.py:finish():402] scan save: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_135528-c11j4jqv/files/requirements.txt requirements.txt
+2024-09-29 13:59:06,891 INFO    SenderThread:18440 [dir_watcher.py:finish():402] scan save: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_135528-c11j4jqv/files/conda-environment.yaml conda-environment.yaml
+2024-09-29 13:59:06,891 INFO    SenderThread:18440 [dir_watcher.py:finish():402] scan save: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_135528-c11j4jqv/files/wandb-metadata.json wandb-metadata.json
+2024-09-29 13:59:06,891 INFO    SenderThread:18440 [sender.py:transition_state():626] send defer: 10
+2024-09-29 13:59:06,892 DEBUG   SenderThread:18440 [sender.py:send_request():418] send_request: poll_exit
+2024-09-29 13:59:06,892 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: defer
+2024-09-29 13:59:06,893 INFO    HandlerThread:18440 [handler.py:handle_request_defer():184] handle defer: 10
+2024-09-29 13:59:06,894 DEBUG   SenderThread:18440 [sender.py:send_request():418] send_request: defer
+2024-09-29 13:59:06,894 INFO    SenderThread:18440 [sender.py:send_request_defer():622] handle sender defer: 10
+2024-09-29 13:59:06,894 INFO    SenderThread:18440 [file_pusher.py:finish():169] shutting down file pusher
+2024-09-29 13:59:07,043 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-29 13:59:07,043 DEBUG   SenderThread:18440 [sender.py:send_request():418] send_request: poll_exit
+2024-09-29 13:59:07,055 ERROR   wandb-upload_0:18440 [internal_api.py:execute():349] 404 response executing GraphQL.
+2024-09-29 13:59:07,056 ERROR   wandb-upload_0:18440 [internal_api.py:execute():350] {"errors":[{"message":"run loss_choice_02/c11j4jqv not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2024-09-29 13:59:07,058 ERROR   Thread-11 (_thread_body):18440 [step_upload.py:_handle_event():144] Failed to upload file: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_135528-c11j4jqv/files/output.log
+Traceback (most recent call last):
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 345, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2500, in upload_urls
+    query_result = self.gql(
+                   ^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 317, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 352, in execute
+    wandb.termerror(f"Error while calling W&B API: {error} ({response})")
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 64, in termerror
+    _log(
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 103, in _log
+    click.echo(line, file=sys.stderr, nl=newline)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/click/utils.py", line 318, in echo
+    file.write(out)  # type: ignore
+    ^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/egor/miniconda3/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/filesync/step_upload.py", line 223, in run_and_notify
+    self._do_upload(event)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/filesync/step_upload.py", line 243, in _do_upload
+    job.run()
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/filesync/upload_job.py", line 56, in run
+    self.push()
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/filesync/upload_job.py", line 105, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/apis/normalize.py", line 87, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2500, in upload_urls
+    query_result = self.gql(
+                   ^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 317, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 352, in execute
+    wandb.termerror(f"Error while calling W&B API: {error} ({response})")
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 64, in termerror
+    _log(
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 103, in _log
+    click.echo(line, file=sys.stderr, nl=newline)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/click/utils.py", line 318, in echo
+    file.write(out)  # type: ignore
+    ^^^^^^^^^^^^^^^
+wandb.errors.CommError: [Errno 32] Broken pipe
+2024-09-29 13:59:07,066 ERROR   wandb-upload_1:18440 [internal_api.py:execute():349] 404 response executing GraphQL.
+2024-09-29 13:59:07,219 ERROR   wandb-upload_2:18440 [internal_api.py:execute():349] 404 response executing GraphQL.
+2024-09-29 13:59:07,229 ERROR   wandb-upload_3:18440 [internal_api.py:execute():349] 404 response executing GraphQL.
+2024-09-29 13:59:07,252 ERROR   wandb-upload_4:18440 [internal_api.py:execute():349] 404 response executing GraphQL.
+2024-09-29 13:59:07,369 ERROR   wandb-upload_1:18440 [internal_api.py:execute():350] {"errors":[{"message":"run loss_choice_02/c11j4jqv not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2024-09-29 13:59:07,369 ERROR   wandb-upload_2:18440 [internal_api.py:execute():350] {"errors":[{"message":"run loss_choice_02/c11j4jqv not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2024-09-29 13:59:07,369 ERROR   wandb-upload_3:18440 [internal_api.py:execute():350] {"errors":[{"message":"run loss_choice_02/c11j4jqv not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2024-09-29 13:59:07,369 ERROR   wandb-upload_4:18440 [internal_api.py:execute():350] {"errors":[{"message":"run loss_choice_02/c11j4jqv not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2024-09-29 13:59:07,370 ERROR   Thread-11 (_thread_body):18440 [step_upload.py:_handle_event():144] Failed to upload file: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_135528-c11j4jqv/files/wandb-summary.json
+Traceback (most recent call last):
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 345, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2500, in upload_urls
+    query_result = self.gql(
+                   ^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 317, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 352, in execute
+    wandb.termerror(f"Error while calling W&B API: {error} ({response})")
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 64, in termerror
+    _log(
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 103, in _log
+    click.echo(line, file=sys.stderr, nl=newline)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/click/utils.py", line 318, in echo
+    file.write(out)  # type: ignore
+    ^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/egor/miniconda3/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/filesync/step_upload.py", line 223, in run_and_notify
+    self._do_upload(event)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/filesync/step_upload.py", line 243, in _do_upload
+    job.run()
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/filesync/upload_job.py", line 56, in run
+    self.push()
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/filesync/upload_job.py", line 105, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/apis/normalize.py", line 87, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2500, in upload_urls
+    query_result = self.gql(
+                   ^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 317, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 352, in execute
+    wandb.termerror(f"Error while calling W&B API: {error} ({response})")
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 64, in termerror
+    _log(
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 103, in _log
+    click.echo(line, file=sys.stderr, nl=newline)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/click/utils.py", line 318, in echo
+    file.write(out)  # type: ignore
+    ^^^^^^^^^^^^^^^
+wandb.errors.CommError: [Errno 32] Broken pipe
+2024-09-29 13:59:07,372 ERROR   Thread-11 (_thread_body):18440 [step_upload.py:_handle_event():144] Failed to upload file: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_135528-c11j4jqv/files/config.yaml
+Traceback (most recent call last):
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 345, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2500, in upload_urls
+    query_result = self.gql(
+                   ^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 317, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 352, in execute
+    wandb.termerror(f"Error while calling W&B API: {error} ({response})")
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 64, in termerror
+    _log(
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 103, in _log
+    click.echo(line, file=sys.stderr, nl=newline)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/click/utils.py", line 318, in echo
+    file.write(out)  # type: ignore
+    ^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/egor/miniconda3/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/filesync/step_upload.py", line 223, in run_and_notify
+    self._do_upload(event)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/filesync/step_upload.py", line 243, in _do_upload
+    job.run()
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/filesync/upload_job.py", line 56, in run
+    self.push()
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/filesync/upload_job.py", line 105, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/apis/normalize.py", line 87, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2500, in upload_urls
+    query_result = self.gql(
+                   ^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 317, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 352, in execute
+    wandb.termerror(f"Error while calling W&B API: {error} ({response})")
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 64, in termerror
+    _log(
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 103, in _log
+    click.echo(line, file=sys.stderr, nl=newline)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/click/utils.py", line 318, in echo
+    file.write(out)  # type: ignore
+    ^^^^^^^^^^^^^^^
+wandb.errors.CommError: [Errno 32] Broken pipe
+2024-09-29 13:59:07,374 ERROR   Thread-11 (_thread_body):18440 [step_upload.py:_handle_event():144] Failed to upload file: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_135528-c11j4jqv/files/requirements.txt
+Traceback (most recent call last):
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 345, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2500, in upload_urls
+    query_result = self.gql(
+                   ^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 317, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 352, in execute
+    wandb.termerror(f"Error while calling W&B API: {error} ({response})")
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 64, in termerror
+    _log(
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 103, in _log
+    click.echo(line, file=sys.stderr, nl=newline)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/click/utils.py", line 318, in echo
+    file.write(out)  # type: ignore
+    ^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/egor/miniconda3/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/filesync/step_upload.py", line 223, in run_and_notify
+    self._do_upload(event)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/filesync/step_upload.py", line 243, in _do_upload
+    job.run()
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/filesync/upload_job.py", line 56, in run
+    self.push()
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/filesync/upload_job.py", line 105, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/apis/normalize.py", line 87, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2500, in upload_urls
+    query_result = self.gql(
+                   ^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 317, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 352, in execute
+    wandb.termerror(f"Error while calling W&B API: {error} ({response})")
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 64, in termerror
+    _log(
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 103, in _log
+    click.echo(line, file=sys.stderr, nl=newline)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/click/utils.py", line 318, in echo
+    file.write(out)  # type: ignore
+    ^^^^^^^^^^^^^^^
+wandb.errors.CommError: [Errno 32] Broken pipe
+2024-09-29 13:59:07,376 ERROR   Thread-11 (_thread_body):18440 [step_upload.py:_handle_event():144] Failed to upload file: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_135528-c11j4jqv/files/conda-environment.yaml
+Traceback (most recent call last):
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 345, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2500, in upload_urls
+    query_result = self.gql(
+                   ^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 317, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 352, in execute
+    wandb.termerror(f"Error while calling W&B API: {error} ({response})")
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 64, in termerror
+    _log(
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 103, in _log
+    click.echo(line, file=sys.stderr, nl=newline)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/click/utils.py", line 318, in echo
+    file.write(out)  # type: ignore
+    ^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/egor/miniconda3/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/filesync/step_upload.py", line 223, in run_and_notify
+    self._do_upload(event)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/filesync/step_upload.py", line 243, in _do_upload
+    job.run()
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/filesync/upload_job.py", line 56, in run
+    self.push()
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/filesync/upload_job.py", line 105, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/apis/normalize.py", line 87, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2500, in upload_urls
+    query_result = self.gql(
+                   ^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 317, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 352, in execute
+    wandb.termerror(f"Error while calling W&B API: {error} ({response})")
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 64, in termerror
+    _log(
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 103, in _log
+    click.echo(line, file=sys.stderr, nl=newline)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/click/utils.py", line 318, in echo
+    file.write(out)  # type: ignore
+    ^^^^^^^^^^^^^^^
+wandb.errors.CommError: [Errno 32] Broken pipe
+2024-09-29 13:59:07,578 INFO    Thread-11 (_thread_body):18440 [sender.py:transition_state():626] send defer: 11
+2024-09-29 13:59:07,579 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: defer
+2024-09-29 13:59:07,579 INFO    HandlerThread:18440 [handler.py:handle_request_defer():184] handle defer: 11
+2024-09-29 13:59:07,579 DEBUG   SenderThread:18440 [sender.py:send_request():418] send_request: defer
+2024-09-29 13:59:07,579 INFO    SenderThread:18440 [sender.py:send_request_defer():622] handle sender defer: 11
+2024-09-29 13:59:07,579 INFO    SenderThread:18440 [file_pusher.py:join():175] waiting for file pusher
+2024-09-29 13:59:07,579 INFO    SenderThread:18440 [sender.py:transition_state():626] send defer: 12
+2024-09-29 13:59:07,579 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: defer
+2024-09-29 13:59:07,579 INFO    HandlerThread:18440 [handler.py:handle_request_defer():184] handle defer: 12
+2024-09-29 13:59:07,580 DEBUG   SenderThread:18440 [sender.py:send_request():418] send_request: defer
+2024-09-29 13:59:07,580 INFO    SenderThread:18440 [sender.py:send_request_defer():622] handle sender defer: 12
+2024-09-29 13:59:07,580 INFO    SenderThread:18440 [file_stream.py:finish():601] file stream finish called
+2024-09-29 13:59:07,751 ERROR   FileStreamThread:18440 [file_stream.py:_thread_except_body():500] generic exception in filestream thread
+Traceback (most recent call last):
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/file_stream.py", line 496, in _thread_except_body
+    self._thread_body()
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/file_stream.py", line 452, in _thread_body
+    success = self._send(ready_chunks, uploaded=uploaded)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/file_stream.py", line 541, in _send
+    self._handle_response(
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/file_stream.py", line 507, in _handle_response
+    wandb.termerror(
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 64, in termerror
+    _log(
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 103, in _log
+    click.echo(line, file=sys.stderr, nl=newline)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/click/utils.py", line 318, in echo
+    file.write(out)  # type: ignore
+    ^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2024-09-29 13:59:08,016 INFO    SenderThread:18440 [file_stream.py:finish():605] file stream finish is done
+2024-09-29 13:59:08,016 ERROR   SenderThread:18440 [file_stream.py:finish():607] FileStream exception
+Traceback (most recent call last):
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/file_stream.py", line 496, in _thread_except_body
+    self._thread_body()
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/file_stream.py", line 452, in _thread_body
+    success = self._send(ready_chunks, uploaded=uploaded)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/file_stream.py", line 541, in _send
+    self._handle_response(
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/file_stream.py", line 507, in _handle_response
+    wandb.termerror(
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 64, in termerror
+    _log(
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 103, in _log
+    click.echo(line, file=sys.stderr, nl=newline)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/click/utils.py", line 318, in echo
+    file.write(out)  # type: ignore
+    ^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2024-09-29 13:59:08,043 DEBUG   HandlerThread:18440 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-29 13:59:08,043 INFO    HandlerThread:18440 [handler.py:finish():884] shutting down handler
+2024-09-29 13:59:08,044 INFO    WriterThread:18440 [datastore.py:close():296] close: /home/egor/desktop/tmp/precondnn/exps/loss_choice_exps/exp02/wandb/run-20240929_135528-c11j4jqv/run-c11j4jqv.wandb
+2024-09-29 13:59:08,901 ERROR   StreamThr :18440 [internal.py:wandb_internal():173] Thread SenderThread:
+Traceback (most recent call last):
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_util.py", line 48, in run
+    self._run()
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal_util.py", line 99, in _run
+    self._process(record)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/internal.py", line 327, in _process
+    self._sm.send(record)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/sender.py", line 398, in send
+    send_handler(record)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/sender.py", line 420, in send_request
+    send_handler(record)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/sender.py", line 677, in send_request_defer
+    self._fs.finish(self._exit_code)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/file_stream.py", line 610, in finish
+    raise self._exc_info[1].with_traceback(self._exc_info[2])
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/file_stream.py", line 496, in _thread_except_body
+    self._thread_body()
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/file_stream.py", line 452, in _thread_body
+    success = self._send(ready_chunks, uploaded=uploaded)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/file_stream.py", line 541, in _send
+    self._handle_response(
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/sdk/internal/file_stream.py", line 507, in _handle_response
+    wandb.termerror(
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 64, in termerror
+    _log(
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/wandb/errors/term.py", line 103, in _log
+    click.echo(line, file=sys.stderr, nl=newline)
+  File "/home/egor/miniconda3/lib/python3.11/site-packages/click/utils.py", line 318, in echo
+    file.write(out)  # type: ignore
+    ^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
